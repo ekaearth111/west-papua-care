@@ -53,16 +53,16 @@ export function TimelineSection({
           <div className="section-label text-[var(--color-gray)]">
             [ TIMELINE ]
           </div>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold text-[var(--color-charcoal)] mb-4">
+          <h2 className="text-center mb-4">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-lg text-[var(--color-gray)] mb-12">{subtitle}</p>
+            <p className="text-center text-lg text-[var(--color-gray)] mb-12">{subtitle}</p>
           )}
 
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-[var(--color-burnt-orange)]/30 -translate-x-1/2" />
+            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-[var(--color-navy-accent)]/30 -translate-x-1/2" />
 
             <div className="flex flex-col gap-8">
               {items.map((item, index) => (
@@ -78,7 +78,7 @@ export function TimelineSection({
                   style={{ transitionDelay: `${index * 150}ms` }}
                 >
                   {/* Year marker */}
-                  <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-[var(--color-burnt-orange)] text-white flex items-center justify-center text-xs font-bold z-10">
+                  <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-[var(--color-navy-accent)] text-white flex items-center justify-center text-xs font-bold z-10">
                     {item.year.slice(-2)}
                   </div>
 
@@ -89,10 +89,10 @@ export function TimelineSection({
                       index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
                     )}
                   >
-                    <span className="inline-block text-sm font-semibold text-[var(--color-burnt-orange)] uppercase tracking-wide mb-2">
+                    <span className="inline-block text-sm font-semibold text-[var(--color-navy-accent)] uppercase tracking-wide mb-2">
                       {item.year}
                     </span>
-                    <h3 className="text-xl font-semibold text-[var(--color-charcoal)] mb-2">
+                    <h3 className=" mb-2">
                       {item.title}
                     </h3>
                     <p className="text-[var(--color-gray)] m-0">

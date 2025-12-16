@@ -93,7 +93,7 @@ export default function GetInvolvedPage() {
               <div className="w-12 h-12 bg-[var(--color-burnt-orange)] rounded-full flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
-              <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] m-0">
+              <h2 className=" m-0">
                 Donate
               </h2>
             </div>
@@ -109,7 +109,7 @@ export default function GetInvolvedPage() {
                   key={index}
                   className="bg-[var(--color-cream)] p-8 rounded-lg"
                 >
-                  <h3 className="text-lg font-semibold text-[var(--color-charcoal)] mb-3">
+                  <h3 className=" mb-3">
                     {way.title}
                   </h3>
                   <p className="text-base text-[var(--color-gray)] m-0">
@@ -119,16 +119,16 @@ export default function GetInvolvedPage() {
               ))}
             </div>
 
-            <h3 className="text-xl font-semibold text-[var(--color-charcoal)] mt-8 mb-6">
+            <h3 className=" mt-8 mb-6">
               Your Impact
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
               {impactLevels.map((level, index) => (
                 <div
                   key={index}
-                  className="bg-[var(--color-cream)] p-6 rounded-lg border-l-4 border-[var(--color-burnt-orange)]"
+                  className="bg-[var(--color-cream)] p-6 rounded-lg border-l-4 border-[var(--color-navy-accent)]"
                 >
-                  <div className="font-[var(--font-family-heading)] text-2xl font-bold text-[var(--color-burnt-orange)] mb-2">
+                  <div className="font-[var(--font-family-heading)] text-2xl font-bold text-[var(--color-navy-accent)] mb-2">
                     {level.amount}
                   </div>
                   <p className="text-sm text-[var(--color-gray)] m-0">
@@ -149,7 +149,7 @@ export default function GetInvolvedPage() {
               <div className="w-12 h-12 bg-[var(--color-forest-green)] rounded-full flex items-center justify-center">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
-              <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] m-0">
+              <h2 className=" m-0">
                 Partner With Us
               </h2>
             </div>
@@ -170,7 +170,7 @@ export default function GetInvolvedPage() {
                     <div className="w-12 h-12 bg-[var(--color-forest-green)] rounded-full flex items-center justify-center mb-4">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-semibold text-[var(--color-charcoal)] mb-3">
+                    <h3 className=" mb-3">
                       {type.title}
                     </h3>
                     <p className="text-base text-[var(--color-gray)] m-0">
@@ -192,7 +192,7 @@ export default function GetInvolvedPage() {
               <div className="w-12 h-12 bg-[var(--color-charcoal)] rounded-full flex items-center justify-center">
                 <Briefcase className="w-6 h-6 text-white" />
               </div>
-              <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] m-0">
+              <h2 className=" m-0">
                 Work With Us
               </h2>
             </div>
@@ -204,7 +204,7 @@ export default function GetInvolvedPage() {
             </p>
 
             <div className="bg-[var(--color-cream)] p-8 rounded-lg my-8">
-              <h3 className="text-lg font-semibold text-[var(--color-charcoal)] mb-4">
+              <h3 className=" mb-4">
                 Current Openings
               </h3>
               <p className="text-[var(--color-gray)] mb-4">
@@ -218,7 +218,7 @@ export default function GetInvolvedPage() {
                 Send your CV and a brief introduction to{" "}
                 <a
                   href="mailto:careers@westpapuacare.org"
-                  className="text-[var(--color-burnt-orange)] hover:underline"
+                  className="text-[var(--color-navy-accent)] hover:underline"
                 >
                   careers@westpapuacare.org
                 </a>
@@ -227,10 +227,10 @@ export default function GetInvolvedPage() {
 
             {/* CTA */}
             <div className="bg-[var(--color-forest-green)] p-12 rounded-lg text-center mt-12">
-              <h3 className="text-2xl font-semibold text-[var(--color-off-white)] mb-4">
+              <h3 className="text-center text-[var(--color-off-white)] mb-4">
                 Stay Connected
               </h3>
-              <p className="text-lg text-[rgba(255,255,255,0.9)] mb-6">
+              <p className="text-center text-lg text-[rgba(255,255,255,0.9)] mb-6">
                 Subscribe to our newsletter for updates on our progress and
                 impact.
               </p>

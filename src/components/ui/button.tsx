@@ -15,14 +15,14 @@ const buttonVariants = cva(
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
-          "bg-[var(--color-forest-green)] text-white hover:bg-[var(--color-forest-green-dark)]",
+          "bg-[var(--color-forest-green)] !text-white hover:!text-white hover:bg-[var(--color-forest-green-dark)]",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-[var(--color-burnt-orange)] underline-offset-4 hover:underline p-0 h-auto font-semibold",
+        link: "!text-[var(--color-burnt-orange)] underline-offset-4 hover:underline p-0 h-auto font-semibold",
         // Custom variants for West Papua Care
         primary:
-          "bg-[var(--color-forest-green)] text-white hover:bg-[var(--color-forest-green-dark)]",
-        cta: "bg-[var(--color-burnt-orange)] text-white hover:bg-[var(--color-burnt-orange-dark)] shadow-md hover:shadow-lg",
+          "bg-[var(--color-forest-green)] !text-white hover:!text-white hover:bg-[var(--color-forest-green-dark)]",
+        cta: "bg-[var(--color-burnt-orange)] !text-white hover:!text-white hover:bg-[var(--color-burnt-orange-dark)] shadow-md hover:shadow-lg",
       },
       size: {
         default: "h-11 px-6 py-2",

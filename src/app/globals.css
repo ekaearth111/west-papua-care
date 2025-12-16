@@ -22,14 +22,16 @@
   --font-family-heading: "Montserrat", system-ui, -apple-system, sans-serif;
 
   /* === COLORS === */
-  --color-forest-green: #485135;
-  --color-forest-green-dark: #2d3a28;
-  --color-forest-green-deep: #1f2720;
+  /* Testing new ocean brand colors */
+  --color-forest-green: #1A5F7A;        /* Ocean Teal (was #485135) */
+  --color-forest-green-dark: #145064;   /* Darker Ocean Teal */
+  --color-forest-green-deep: #0A2D3D;   /* Abyssal Blue (was #1f2720) */
   --color-burnt-orange: #D3640F;
   --color-burnt-orange-dark: #b8580c;
+  --color-navy-accent: #0a1628;        /* Deep Navy Blue for accent text on light backgrounds */
   --color-sage-green: rgba(72, 81, 53, 0.08);
   --color-sage-light: #b8c7b0;
-  --color-cream: #F8F6F3;
+  --color-cream: #F0F7FA;              /* Sea Foam (was #F8F6F3) */
   --color-warm-cream: #FEFDFB;
   --color-charcoal: #1A1A1A;
   --color-gray: #6B6B6B;

@@ -38,7 +38,7 @@ export function Hero() {
             mounted && "animate-fade-in"
           )}
         >
-          <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.2] tracking-[-0.02em] text-[var(--color-off-white)]">
+          <h1 className="tracking-[-0.02em] text-[var(--color-off-white)]">
             Community-Led Marine Conservation in{" "}
             <span className="text-[var(--color-burnt-orange)]">Raja Ampat</span>
           </h1>

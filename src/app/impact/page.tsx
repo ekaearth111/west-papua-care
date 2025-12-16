@@ -87,7 +87,7 @@ export default function ImpactPage() {
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
           <div className="max-w-[900px] mx-auto">
-            <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] mb-6">
+            <h2 className=" mb-6">
               Current Status
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
@@ -100,9 +100,9 @@ export default function ImpactPage() {
               {impactStats.map((stat, index) => (
                 <div
                   key={index}
-                  className="bg-[var(--color-cream)] p-6 rounded-lg text-center border-2 border-[var(--color-burnt-orange)]"
+                  className="bg-[var(--color-cream)] p-6 rounded-lg text-center border-2 border-[var(--color-navy-accent)]"
                 >
-                  <div className="font-[var(--font-family-heading)] text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-[var(--color-burnt-orange)] mb-2">
+                  <div className="font-[var(--font-family-heading)] text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-[var(--color-navy-accent)] mb-2">
                     {stat.value}
                   </div>
                   <div className="text-base text-[var(--color-gray)] leading-[1.5]">
@@ -112,19 +112,19 @@ export default function ImpactPage() {
               ))}
             </div>
 
-            <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] mt-12 mb-8">
+            <h2 className=" mt-12 mb-8">
               Timeline & Milestones
             </h2>
             <div className="flex flex-col gap-6 my-8">
               {milestones.map((milestone, index) => (
                 <div
                   key={index}
-                  className="p-6 bg-[var(--color-cream)] border-l-4 border-[var(--color-burnt-orange)] rounded"
+                  className="p-6 bg-[var(--color-cream)] border-l-4 border-[var(--color-navy-accent)] rounded"
                 >
-                  <span className="inline-block text-sm font-semibold text-[var(--color-burnt-orange)] uppercase tracking-wide mb-2">
+                  <span className="inline-block text-sm font-semibold text-[var(--color-navy-accent)] uppercase tracking-wide mb-2">
                     {milestone.year}
                   </span>
-                  <h3 className="text-xl font-semibold text-[var(--color-charcoal)] mb-2">
+                  <h3 className=" mb-2">
                     {milestone.title}
                   </h3>
                   <p className="text-[var(--color-gray)] m-0">
@@ -134,7 +134,7 @@ export default function ImpactPage() {
               ))}
             </div>
 
-            <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] mt-12 mb-8">
+            <h2 className=" mt-12 mb-8">
               Expected Outcomes
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
@@ -149,14 +149,14 @@ export default function ImpactPage() {
                   key={index}
                   className="bg-[var(--color-cream)] p-8 rounded-lg"
                 >
-                  <h3 className="text-lg font-semibold text-[var(--color-charcoal)] mb-4">
+                  <h3 className=" mb-4">
                     {outcome.title}
                   </h3>
                   <ul className="list-none p-0 m-0">
                     {outcome.items.map((item, itemIndex) => (
                       <li
                         key={itemIndex}
-                        className="pl-6 mb-3 relative text-[var(--color-gray)] before:content-['✓'] before:absolute before:left-0 before:text-[var(--color-burnt-orange)] before:font-bold"
+                        className="pl-6 mb-3 relative text-[var(--color-gray)] before:content-['✓'] before:absolute before:left-0 before:text-[var(--color-navy-accent)] before:font-bold"
                       >
                         {item}
                       </li>
@@ -166,8 +166,8 @@ export default function ImpactPage() {
               ))}
             </div>
 
-            <div className="bg-gradient-to-r from-[rgba(211,100,15,0.08)] to-[rgba(211,100,15,0.12)] border-l-4 border-[var(--color-burnt-orange)] p-8 rounded-lg my-12">
-              <h3 className="text-xl font-semibold text-[var(--color-charcoal)] mb-4">
+            <div className="bg-gradient-to-r from-[rgba(10,22,40,0.08)] to-[rgba(10,22,40,0.12)] border-l-4 border-[var(--color-navy-accent)] p-8 rounded-lg my-12">
+              <h3 className=" mb-4">
                 Transparency Commitment
               </h3>
               <p className="text-[var(--color-gray)] m-0">
@@ -179,10 +179,10 @@ export default function ImpactPage() {
             </div>
 
             <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12">
-              <h3 className="text-2xl font-semibold text-[var(--color-charcoal)] mb-4">
+              <h3 className="text-center mb-4">
                 Help Us Achieve These Outcomes
               </h3>
-              <p className="text-lg text-[var(--color-gray)] mb-6">
+              <p className="text-center text-lg text-[var(--color-gray)] mb-6">
                 Your support directly enables community rangers, scientific
                 monitoring, and sustainable livelihood programs.
               </p>

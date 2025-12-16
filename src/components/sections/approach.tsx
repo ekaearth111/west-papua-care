@@ -57,10 +57,10 @@ export function Approach() {
           <div className="section-label text-[rgba(255,255,255,0.7)]">
             [ OUR APPROACH ]
           </div>
-          <h2 className="text-[clamp(2.5rem,5vw,3.5rem)] font-semibold tracking-[-0.02em] text-[var(--color-off-white)] mb-4">
+          <h2 className="text-center tracking-[-0.02em] text-[var(--color-off-white)] mb-4">
             Community-Led Conservation
           </h2>
-          <h3 className="text-[clamp(1.25rem,2.5vw,1.5rem)] font-normal font-[var(--font-family-sans)] text-[rgba(255,255,255,0.8)]">
+          <h3 className="text-center font-normal font-[var(--font-family-sans)] text-[rgba(255,255,255,0.8)]">
             Traditional Governance Meets Modern Science
           </h3>
         </div>
@@ -82,7 +82,7 @@ export function Approach() {
                 <div className="w-14 h-14 p-4 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-2xl mb-2 transition-transform duration-250 group-hover:scale-110">
                   <Icon className="w-full h-full" />
                 </div>
-                <h4 className="text-2xl font-semibold text-[var(--color-off-white)] m-0">
+                <h4 className="text-[var(--color-off-white)] m-0">
                   {pillar.title}
                 </h4>
                 <ul className="list-none m-0 p-0 flex flex-col gap-2 w-full">

@@ -8,10 +8,10 @@ export function CallToAction() {
         <div className="section-label text-[var(--color-gray)]">
           [ GET INVOLVED ]
         </div>
-        <h2 className="text-[clamp(2.5rem,5vw,3.5rem)] font-semibold tracking-[-0.02em] text-[var(--color-charcoal)] mb-6">
+        <h2 className="text-center tracking-[-0.02em] mb-6">
           Join Us in Protecting the Amazon of the Seas
         </h2>
-        <p className="text-[clamp(1.25rem,2.5vw,1.5rem)] leading-[1.7] text-[var(--color-gray)] mb-12">
+        <p className="text-center text-[clamp(1.25rem,2.5vw,1.5rem)] leading-[1.7] text-[var(--color-gray)] mb-12">
           Traditional indigenous governance meets conservation science to
           safeguard the world&apos;s most biodiverse marine ecosystem for
           generations to come

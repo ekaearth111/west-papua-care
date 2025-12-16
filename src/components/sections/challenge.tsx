@@ -41,10 +41,10 @@ export function Challenge() {
           <div className="section-label text-[var(--color-gray)]">
             [ THE CHALLENGE ]
           </div>
-          <h2 className="text-[clamp(2.5rem,5vw,3.5rem)] font-semibold tracking-[-0.02em] text-[var(--color-charcoal)] mb-4">
+          <h2 className="text-center tracking-[-0.02em] mb-4">
             Why This Matters
           </h2>
-          <h3 className="text-[clamp(1.25rem,2.5vw,1.5rem)] font-normal text-[var(--color-gray)]">
+          <h3 className="text-center font-normal text-[var(--color-gray)]">
             Critical Threats
           </h3>
         </div>
@@ -57,7 +57,7 @@ export function Challenge() {
                 key={index}
                 className={cn(
                   "relative bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded p-8 transition-all duration-250 flex flex-col items-start gap-4 overflow-hidden cursor-pointer",
-                  "hover:border-[var(--color-burnt-orange)] hover:-translate-y-1 hover:shadow-md"
+                  "hover:border-[var(--color-navy-accent)] hover:-translate-y-1 hover:shadow-md"
                 )}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
@@ -66,7 +66,7 @@ export function Challenge() {
                 <div className="w-12 h-12 p-2 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-xl transition-transform duration-250 group-hover:scale-110">
                   <Icon className="w-full h-full" />
                 </div>
-                <h4 className="text-2xl font-semibold text-[var(--color-charcoal)] m-0">
+                <h4 className="m-0">
                   {threat.title}
                 </h4>
                 <p className="text-lg leading-relaxed text-[var(--color-gray)] m-0">
@@ -76,7 +76,7 @@ export function Challenge() {
                 {/* Bottom accent line */}
                 <div
                   className={cn(
-                    "absolute bottom-0 left-0 right-0 h-[3px] bg-[var(--color-burnt-orange)] transition-transform duration-500 origin-left",
+                    "absolute bottom-0 left-0 right-0 h-[3px] bg-[var(--color-navy-accent)] transition-transform duration-500 origin-left",
                     hoveredIndex === index ? "scale-x-100" : "scale-x-0"
                   )}
                 />

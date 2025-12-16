@@ -20,7 +20,7 @@ export function Mission() {
               [ OUR MISSION ]
             </div>
             <div className="relative">
-              <div className="w-12 h-12 text-[var(--color-burnt-orange)] mb-4 opacity-70">
+              <div className="w-12 h-12 text-[var(--color-navy-accent)] mb-4 opacity-70">
                 <Quote className="w-full h-full" />
               </div>
               <blockquote className="font-[var(--font-family-sans)] text-[clamp(1.375rem,2.5vw,1.625rem)] leading-[1.7] text-[var(--color-charcoal)] m-0 p-0 font-normal">

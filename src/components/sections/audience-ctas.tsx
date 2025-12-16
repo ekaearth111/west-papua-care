@@ -31,11 +31,11 @@ export function AudienceCTAs({
           <div className="section-label text-[var(--color-gray)]">
             [ GET INVOLVED ]
           </div>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold text-[var(--color-charcoal)] mb-4">
+          <h2 className="text-center mb-4">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-lg text-[var(--color-gray)] max-w-[600px] mx-auto">
+            <p className="text-center text-lg text-[var(--color-gray)] max-w-[600px] mx-auto">
               {subtitle}
             </p>
           )}
@@ -52,7 +52,7 @@ export function AudienceCTAs({
                   {audience.icon}
                 </div>
               )}
-              <h3 className="text-xl font-semibold text-[var(--color-charcoal)] mb-3">
+              <h3 className=" mb-3">
                 {audience.title}
               </h3>
               <p className="text-[var(--color-gray)] mb-6 flex-grow">

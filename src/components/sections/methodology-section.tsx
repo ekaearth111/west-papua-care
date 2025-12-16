@@ -23,28 +23,28 @@ export function MethodologySection({
           <div className="section-label text-[var(--color-gray)]">
             [ OUR METHODOLOGY ]
           </div>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold text-[var(--color-charcoal)] mb-12">
+          <h2 className="text-center mb-12">
             How We Work
           </h2>
 
           <div className="relative">
             {/* Vertical line connecting phases */}
-            <div className="absolute left-[19px] top-8 bottom-8 w-0.5 bg-[var(--color-burnt-orange)]/20 hidden md:block" />
+            <div className="absolute left-[19px] top-8 bottom-8 w-0.5 bg-[var(--color-navy-accent)]/20 hidden md:block" />
 
             <div className="flex flex-col gap-8">
               {steps.map((step, index) => (
                 <div key={index} className="flex gap-6">
                   {/* Phase indicator */}
                   <div className="hidden md:flex flex-col items-center">
-                    <div className="w-10 h-10 rounded-full bg-[var(--color-burnt-orange)] text-white flex items-center justify-center font-semibold text-sm z-10">
+                    <div className="w-10 h-10 rounded-full bg-[var(--color-navy-accent)] text-white flex items-center justify-center font-semibold text-sm z-10">
                       {index + 1}
                     </div>
                   </div>
 
                   {/* Content */}
-                  <div className="flex-1 p-6 bg-[var(--color-cream)] border-l-4 border-[var(--color-burnt-orange)] rounded">
+                  <div className="flex-1 p-6 bg-[var(--color-cream)] border-l-4 border-[var(--color-navy-accent)] rounded">
                     <div className="flex flex-wrap items-center gap-4 mb-3">
-                      <span className="text-sm font-semibold text-[var(--color-burnt-orange)] uppercase tracking-wide">
+                      <span className="text-sm font-semibold text-[var(--color-navy-accent)] uppercase tracking-wide">
                         {step.phase}
                       </span>
                       <span
@@ -60,7 +60,7 @@ export function MethodologySection({
                         {step.status}
                       </span>
                     </div>
-                    <h3 className="text-xl font-semibold text-[var(--color-charcoal)] mb-2">
+                    <h3 className=" mb-2">
                       {step.title}
                     </h3>
                     <p className="text-[var(--color-gray)] m-0">

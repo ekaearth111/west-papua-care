@@ -22,7 +22,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] mb-6">
+              <h2 className=" mb-6">
                 Contact Information
               </h2>
               <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
@@ -37,13 +37,13 @@ export default function ContactPage() {
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-[var(--color-charcoal)] mb-1">
+                    <h3 className=" mb-1">
                       Email
                     </h3>
                     <p className="text-[var(--color-gray)] m-0">
                       <a
                         href="mailto:info@westpapuacare.org"
-                        className="text-[var(--color-burnt-orange)] hover:underline"
+                        className="text-[var(--color-navy-accent)] hover:underline"
                       >
                         info@westpapuacare.org
                       </a>
@@ -59,7 +59,7 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-[var(--color-charcoal)] mb-1">
+                    <h3 className=" mb-1">
                       Project Location
                     </h3>
                     <p className="text-[var(--color-gray)] m-0">
@@ -75,7 +75,7 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-[var(--color-cream)] p-8 rounded-lg mt-8">
-                <h3 className="text-lg font-semibold text-[var(--color-charcoal)] mb-4">
+                <h3 className=" mb-4">
                   Response Time
                 </h3>
                 <p className="text-[var(--color-gray)] m-0">
@@ -88,7 +88,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="bg-[var(--color-cream)] p-8 lg:p-12 rounded-lg">
-              <h2 className="text-2xl font-semibold text-[var(--color-charcoal)] mb-6">
+              <h2 className=" mb-6">
                 Send Us a Message
               </h2>
               <form className="flex flex-col gap-6">
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   By submitting this form, you agree to our{" "}
                   <a
                     href="/privacy"
-                    className="text-[var(--color-burnt-orange)] hover:underline"
+                    className="text-[var(--color-navy-accent)] hover:underline"
                   >
                     Privacy Policy
                   </a>

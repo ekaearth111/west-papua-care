@@ -9,12 +9,12 @@ const partners = [
 
 export function PartnersCarousel() {
   return (
-    <section className="bg-[var(--color-off-white)] py-12 lg:py-16 overflow-hidden">
+    <section className="bg-[#0A2D3D] bg-[var(--color-forest-green-deep)] py-20 lg:py-32 overflow-hidden">
       <div className="max-w-[var(--max-width-wide)] mx-auto px-8">
-        <div className="section-label text-center text-[var(--color-gray)]">
+        <div className="section-label text-center text-[rgba(255,255,255,0.7)]">
           [ OUR PARTNERS ]
         </div>
-        <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold text-center text-[var(--color-charcoal)] mb-12">
+        <h2 className="text-center text-white mb-12">
           Working Together for Marine Conservation
         </h2>
 
@@ -33,7 +33,7 @@ export function PartnersCarousel() {
                 key={index}
                 className="flex-shrink-0 w-40 md:w-44 lg:w-48 h-20 md:h-[90px] lg:h-24 flex items-center justify-center p-4"
               >
-                <div className="w-full h-full bg-[var(--color-light-gray)] rounded flex items-center justify-center text-[var(--color-gray)] text-sm font-medium opacity-60 transition-opacity duration-300 hover:opacity-100">
+                <div className="w-full h-full bg-[rgba(255,255,255,0.1)] rounded flex items-center justify-center text-[rgba(255,255,255,0.7)] text-sm font-medium transition-all duration-300 hover:bg-[rgba(255,255,255,0.15)] hover:text-white">
                   {partner.name}
                 </div>
               </div>

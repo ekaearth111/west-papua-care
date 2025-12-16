@@ -69,7 +69,7 @@ export function StatsBar({
                   "font-[var(--font-family-heading)] text-[clamp(2rem,4vw,3.5rem)] font-bold mb-2",
                   variant === "dark"
                     ? "text-[var(--color-burnt-orange)]"
-                    : "text-[var(--color-burnt-orange)]"
+                    : "text-[var(--color-navy-accent)]"
                 )}
               >
                 {stat.value}

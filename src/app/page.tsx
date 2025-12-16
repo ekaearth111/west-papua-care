@@ -3,10 +3,8 @@ import { Mission } from "@/components/sections/mission";
 import { Approach } from "@/components/sections/approach";
 import { Challenge } from "@/components/sections/challenge";
 import { StatsBar } from "@/components/sections/stats-bar";
-import { NewsCarousel } from "@/components/sections/news-carousel";
 import { PartnersCarousel } from "@/components/sections/partners-carousel";
 import { CallToAction } from "@/components/sections/call-to-action";
-import { getRecentNews } from "@/lib/data/news";
 
 const stats = [
   { value: "250 km²", label: "Marine area under protection" },
@@ -16,8 +14,6 @@ const stats = [
 ];
 
 export default function Home() {
-  const recentNews = getRecentNews(3);
-
   return (
     <>
       <Hero />
@@ -25,7 +21,6 @@ export default function Home() {
       <Mission />
       <Approach />
       <Challenge />
-      <NewsCarousel items={recentNews} />
       <PartnersCarousel />
       <CallToAction />
     </>

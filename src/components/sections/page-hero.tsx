@@ -19,10 +19,10 @@ export function PageHero({ label, title, subtitle }: PageHeroProps) {
         <div className="section-label text-[rgba(255,255,255,0.7)]">
           [ {label} ]
         </div>
-        <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.2] text-[var(--color-off-white)] mb-6">
+        <h1 className="text-center text-[var(--color-off-white)] mb-6">
           {title}
         </h1>
-        <p className="text-[clamp(1.125rem,2vw,1.5rem)] leading-relaxed text-[rgba(255,255,255,0.9)] max-w-[800px] mx-auto">
+        <p className="text-center text-[clamp(1.125rem,2vw,1.5rem)] leading-relaxed text-[rgba(255,255,255,0.9)] max-w-[800px] mx-auto">
           {subtitle}
         </p>
       </div>

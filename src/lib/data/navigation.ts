@@ -22,7 +22,6 @@ export const navigation: NavItem[] = [
       { href: "/impact", label: "Impact Framework" },
     ],
   },
-  { href: "/news", label: "BLOG" },
   { href: "/get-involved", label: "GET INVOLVED" },
   { href: "/contact", label: "DONATE", isDonate: true },
 ];
@@ -31,7 +30,6 @@ export const quickLinks = [
   { href: "/about", label: "Our Story" },
   { href: "/project", label: "Project Overview" },
   { href: "/impact", label: "Impact Framework" },
-  { href: "/news", label: "Blog" },
   { href: "mailto:westpapuacare@gmail.com", label: "Contact" },
 ];
 

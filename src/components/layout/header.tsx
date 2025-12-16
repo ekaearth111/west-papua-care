@@ -43,7 +43,7 @@ export function Header() {
       className={cn(
         "fixed top-0 w-full z-[1020] transition-all duration-300",
         scrolled
-          ? "bg-[rgba(31,39,32,0.98)] backdrop-blur-[12px] shadow-md"
+          ? "bg-[rgba(10,45,61,0.98)] backdrop-blur-[12px] shadow-md"
           : "bg-[var(--color-forest-green-deep)]"
       )}
     >
@@ -75,7 +75,7 @@ export function Header() {
                 <button
                   onClick={() => toggleDropdown(item.label)}
                   aria-expanded={activeDropdown === item.label}
-                  className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] bg-transparent border-none py-2 px-4 cursor-pointer transition-colors duration-300 flex items-center gap-1 whitespace-nowrap hover:text-orange-500 hover:text-[var(--color-burnt-orange)]"
+                  className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] bg-transparent border-none py-2 px-4 cursor-pointer transition-colors duration-300 flex items-center gap-1 whitespace-nowrap hover:text-[#D3640F] hover:text-[var(--color-burnt-orange)]"
                 >
                   {item.label}
                   <ChevronDown
@@ -91,7 +91,7 @@ export function Header() {
                       <Link
                         key={subItem.href}
                         href={subItem.href}
-                        className="block py-2 px-4 text-sm text-[var(--color-charcoal)] no-underline rounded transition-all duration-200 hover:bg-[var(--color-cream)] hover:text-[var(--color-burnt-orange)]"
+                        className="block py-2 px-4 text-sm !text-[var(--color-charcoal)] no-underline rounded transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)]"
                         onClick={() => setActiveDropdown(null)}
                       >
                         {subItem.label}
@@ -105,9 +105,9 @@ export function Header() {
                 key={item.href}
                 href={item.href!}
                 className={cn(
-                  "font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] no-underline py-2 px-4 transition-colors duration-300 whitespace-nowrap hover:text-orange-500 hover:text-[var(--color-burnt-orange)]",
+                  "font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] no-underline py-2 px-4 transition-colors duration-300 whitespace-nowrap hover:text-[#D3640F] hover:text-[var(--color-burnt-orange)]",
                   item.isDonate &&
-                    "bg-orange-600 bg-[var(--color-burnt-orange)] rounded px-6 font-semibold hover:bg-orange-700 hover:bg-[#b8580c] hover:text-white hover:text-[var(--color-off-white)]"
+                    "bg-[#D3640F] bg-[var(--color-burnt-orange)] rounded px-6 font-semibold hover:bg-[#b8580c] hover:bg-[var(--color-burnt-orange-dark)] hover:text-white hover:text-[var(--color-off-white)]"
                 )}
               >
                 {item.label}
@@ -158,7 +158,7 @@ export function Header() {
                     <Link
                       key={subItem.href}
                       href={subItem.href}
-                      className="block p-4 text-lg text-[var(--color-charcoal)] no-underline rounded-lg transition-all duration-200 hover:bg-[var(--color-cream)] hover:text-[var(--color-burnt-orange)]"
+                      className="block p-4 text-lg !text-[var(--color-charcoal)] no-underline rounded-lg transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)]"
                       onClick={closeMenu}
                     >
                       {subItem.label}
@@ -170,7 +170,7 @@ export function Header() {
                   key={item.href}
                   href={item.href!}
                   className={cn(
-                    "block p-4 text-lg text-[var(--color-charcoal)] no-underline rounded-lg transition-all duration-200 hover:bg-[var(--color-cream)] hover:text-[var(--color-burnt-orange)]",
+                    "block p-4 text-lg !text-[var(--color-charcoal)] no-underline rounded-lg transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)]",
                     item.isDonate &&
                       "bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] font-semibold text-center hover:bg-[#b8580c] hover:text-[var(--color-off-white)]"
                   )}
