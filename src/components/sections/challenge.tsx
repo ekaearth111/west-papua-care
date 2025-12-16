@@ -7,27 +7,27 @@ import { cn } from "@/lib/utils";
 const threats = [
   {
     icon: Ban,
-    title: "Cyanide & Blast Fishing",
+    title: "Biodiversity Under Pressure",
     description:
-      "Coral reef destruction from cyanide fishing and past bomb fishing leaving big areas already destroyed",
+      "Raja Ampat hosts 75% of all known coral species but faces increasing fishing pressure threatening this irreplaceable ecosystem",
   },
   {
     icon: AlertTriangle,
-    title: "Illegal Harvesting",
+    title: "Destructive Practices",
     description:
-      "Sea turtle and egg harvesting, shark finning, and harvest of protected species including Napoleon wrasse and Bumphead Parrotfish",
+      "Cyanide fishing, blast fishing, shark finning, and turtle poaching continue to devastate reef ecosystems and marine life",
+  },
+  {
+    icon: Link2Off,
+    title: "Weakening Traditional Systems",
+    description:
+      "Loss of traditional management systems (sasi) is weakening community resource governance that protected these waters for generations",
   },
   {
     icon: TrendingUp,
     title: "External Illegal Fishing",
     description:
-      "Illegal fishers from other islands as far as Sulawesi frequently visiting the area, threatening local marine resources",
-  },
-  {
-    icon: Link2Off,
-    title: "Key Species Under Threat",
-    description:
-      "Decline of endangered species including Hawksbill and Green sea turtles, Napoleon wrasse, Bumphead Parrotfish, and various shark species",
+      "Illegal fishing from neighboring islands threatens biodiversity hotspots and local community livelihoods",
   },
 ];
 
@@ -85,13 +85,20 @@ export function Challenge() {
           })}
         </div>
 
-        <div className="bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded p-12 text-center">
-          <p className="text-lg leading-[1.7] text-[var(--color-gray)] m-0 max-w-[750px] mx-auto">
-            Misool, located in the heart of the Coral Triangle—the global
-            epicenter of marine biodiversity—faces mounting threats but offers a
-            unique opportunity. With strong community consensus and traditional
-            leader endorsement already secured, we can act now to protect this
-            irreplaceable ecosystem before it&apos;s too late.
+        <div className="bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded p-12">
+          <h3 className="text-center mb-6 text-[var(--color-navy-accent)]">
+            The Opportunity
+          </h3>
+          <p className="text-lg leading-[1.7] text-[var(--color-gray)] m-0 max-w-[750px] mx-auto text-center mb-4">
+            Located in the global epicenter of marine biodiversity with the highest
+            fish species richness on Earth, the Misool region represents a critical
+            habitat for threatened species including Napoleon wrasse, Hawksbill and
+            Green sea turtles, Bumphead parrotfish, and reef sharks.
+          </p>
+          <p className="text-lg leading-[1.7] text-[var(--color-charcoal)] font-medium m-0 max-w-[750px] mx-auto text-center">
+            With strong community consensus and traditional leader endorsement secured,
+            we have a window of opportunity to protect this irreplaceable ecosystem
+            before it&apos;s too late.
           </p>
         </div>
       </div>

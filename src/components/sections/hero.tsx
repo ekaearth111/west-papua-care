@@ -5,13 +5,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const keyPoints = [
-  "Community-led Marine Protected Area in Misool in Raja Ampat covering 250 km²",
-  "At the heart of the Coral Triangle - the most biodiverse reefs on earth",
-  "Empower coastal communities and build local resilience",
-  "Traditional indigenous governance meets conservation science",
-];
-
 export function Hero() {
   const [mounted, setMounted] = useState(false);
 
@@ -34,32 +27,28 @@ export function Hero() {
       <div className="max-w-[var(--max-width-wide)] mx-auto px-8 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center relative z-[1]">
         <div
           className={cn(
-            "flex flex-col gap-12",
+            "flex flex-col gap-8",
             mounted && "animate-fade-in"
           )}
         >
-          <h1 className="tracking-[-0.02em] text-[var(--color-off-white)]">
-            Community-Led Marine Conservation in{" "}
-            <span className="text-[var(--color-burnt-orange)]">Raja Ampat</span>
+          <h1 className="text-[clamp(2.25rem,4.5vw,3.5rem)] tracking-[-0.02em] text-[var(--color-off-white)] leading-[1.1]">
+            Protecting the Amazon of the Seas Through{" "}
+            <span className="text-[var(--color-burnt-orange)]">Community Wisdom</span>{" "}
+            and Conservation Science
           </h1>
 
-          <ul className="list-none m-0 p-0 flex flex-col gap-4">
-            {keyPoints.map((point, index) => (
-              <li
-                key={index}
-                className="text-[clamp(1.125rem,2vw,1.375rem)] leading-relaxed text-[rgba(255,255,255,0.9)] pl-8 relative before:content-['•'] before:absolute before:left-0 before:text-[var(--color-burnt-orange)] before:text-[1.5em] before:leading-[1]"
-              >
-                {point}
-              </li>
-            ))}
-          </ul>
+          <p className="text-[clamp(1.125rem,2vw,1.375rem)] leading-relaxed text-[rgba(255,255,255,0.9)]">
+            Establishing a 250 km² community-led Marine Protected Area in Raja Ampat,
+            Indonesia—where local communities safeguard the world&apos;s most biodiverse
+            coral reef ecosystem
+          </p>
 
           <div className="flex flex-col md:flex-row gap-4 lg:gap-6 items-start">
             <Button variant="cta" size="lg" asChild>
               <Link href="/get-involved">Support Our Mission</Link>
             </Button>
             <Button variant="secondary" size="lg" asChild>
-              <Link href="/project">Learn More</Link>
+              <Link href="/project">Learn About the Project</Link>
             </Button>
           </div>
         </div>

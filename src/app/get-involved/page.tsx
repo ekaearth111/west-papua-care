@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/sections/page-hero";
 import { Button } from "@/components/ui/button";
-import { Heart, Building2, Briefcase, GraduationCap } from "lucide-react";
+import {
+  Heart,
+  Building2,
+  Briefcase,
+  GraduationCap,
+  Users,
+  Megaphone,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Get Involved",
@@ -73,6 +80,52 @@ const impactLevels = [
   {
     amount: "$10,000",
     impact: "Sponsors a ranger position for one year",
+  },
+];
+
+const volunteerOptions = [
+  {
+    title: "On-Site Opportunities",
+    description:
+      "Join our team in Raja Ampat for hands-on conservation work including reef monitoring, community education, and patrol support.",
+  },
+  {
+    title: "Virtual Support",
+    description:
+      "Contribute remotely with skills in translation, design, communications, data analysis, or administrative support.",
+  },
+  {
+    title: "Skilled Volunteer Placements",
+    description:
+      "Share professional expertise in marine science, community development, fundraising, or organizational management.",
+  },
+  {
+    title: "Youth Exchange Programs",
+    description:
+      "Participate in cultural exchange programs connecting young people across communities committed to conservation.",
+  },
+];
+
+const advocacyOptions = [
+  {
+    title: "Share on Social Media",
+    description:
+      "Amplify our message and help raise awareness about community-led marine conservation.",
+  },
+  {
+    title: "Join Our Newsletter",
+    description:
+      "Stay informed about our progress and receive updates on how you can take action.",
+  },
+  {
+    title: "Spread the Word",
+    description:
+      "Tell friends, family, and colleagues about our mission to protect Raja Ampat.",
+  },
+  {
+    title: "Connect Us",
+    description:
+      "Introduce us to potential donors, partners, or supporters who share our values.",
   },
 ];
 
@@ -187,42 +240,71 @@ export default function GetInvolvedPage() {
               </Button>
             </div>
 
-            {/* Careers Section */}
+            {/* Volunteer Section */}
             <div className="flex items-center gap-4 mt-16 mb-6">
-              <div className="w-12 h-12 bg-[var(--color-charcoal)] rounded-full flex items-center justify-center">
-                <Briefcase className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-[var(--color-navy-accent)] rounded-full flex items-center justify-center">
+                <Users className="w-6 h-6 text-white" />
               </div>
               <h2 className=" m-0">
-                Work With Us
+                Volunteer
               </h2>
             </div>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
-              We&apos;re building a team of dedicated conservationists,
-              community organizers, and marine scientists. While we&apos;re a
-              small organization, we occasionally have opportunities for the
-              right people.
+              Join our community of volunteers making a difference for marine
+              conservation. Whether on-site or remote, your skills and time can
+              have a real impact.
             </p>
 
-            <div className="bg-[var(--color-cream)] p-8 rounded-lg my-8">
-              <h3 className=" mb-4">
-                Current Openings
-              </h3>
-              <p className="text-[var(--color-gray)] mb-4">
-                No positions are currently open. However, we&apos;re always
-                interested in hearing from experienced marine scientists,
-                community development specialists, and conservation
-                professionals who are passionate about community-led
-                conservation.
-              </p>
-              <p className="text-[var(--color-gray)] m-0">
-                Send your CV and a brief introduction to{" "}
-                <a
-                  href="mailto:careers@westpapuacare.org"
-                  className="text-[var(--color-navy-accent)] hover:underline"
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+              {volunteerOptions.map((option, index) => (
+                <div
+                  key={index}
+                  className="bg-[var(--color-cream)] p-8 rounded-lg"
                 >
-                  careers@westpapuacare.org
-                </a>
-              </p>
+                  <h3 className=" mb-3">
+                    {option.title}
+                  </h3>
+                  <p className="text-base text-[var(--color-gray)] m-0">
+                    {option.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center my-8">
+              <Button variant="secondary" size="md" asChild>
+                <Link href="/contact">Volunteer Inquiry</Link>
+              </Button>
+            </div>
+
+            {/* Advocate Section */}
+            <div className="flex items-center gap-4 mt-16 mb-6">
+              <div className="w-12 h-12 bg-[var(--color-charcoal)] rounded-full flex items-center justify-center">
+                <Megaphone className="w-6 h-6 text-white" />
+              </div>
+              <h2 className=" m-0">
+                Advocate
+              </h2>
+            </div>
+            <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
+              Even without donating or volunteering, you can help by spreading
+              the word about community-led marine conservation.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+              {advocacyOptions.map((option, index) => (
+                <div
+                  key={index}
+                  className="bg-[var(--color-cream)] p-8 rounded-lg"
+                >
+                  <h3 className=" mb-3">
+                    {option.title}
+                  </h3>
+                  <p className="text-base text-[var(--color-gray)] m-0">
+                    {option.description}
+                  </p>
+                </div>
+              ))}
             </div>
 
             {/* CTA */}

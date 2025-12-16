@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/sections/page-hero";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -42,10 +42,10 @@ export default function ContactPage() {
                     </h3>
                     <p className="text-[var(--color-gray)] m-0">
                       <a
-                        href="mailto:info@westpapuacare.org"
+                        href="mailto:westpapuacare@gmail.com"
                         className="text-[var(--color-navy-accent)] hover:underline"
                       >
-                        info@westpapuacare.org
+                        westpapuacare@gmail.com
                       </a>
                     </p>
                     <p className="text-sm text-[var(--color-gray)] mt-1">
@@ -56,6 +56,30 @@ export default function ContactPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[var(--color-forest-green)] rounded-full flex items-center justify-center flex-shrink-0">
+                    <MessageCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className=" mb-1">
+                      WhatsApp
+                    </h3>
+                    <p className="text-[var(--color-gray)] m-0">
+                      <a
+                        href="https://wa.me/6282266608012"
+                        className="text-[var(--color-navy-accent)] hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        +62 822 6660 8012
+                      </a>
+                    </p>
+                    <p className="text-sm text-[var(--color-gray)] mt-1">
+                      Quick questions and direct communication
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-[var(--color-navy-accent)] rounded-full flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>

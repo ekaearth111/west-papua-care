@@ -20,39 +20,39 @@ export const metadata: Metadata = {
 const values = [
   {
     icon: Users,
-    title: "Community Ownership",
+    title: "Community First",
     description:
-      "Local communities must have genuine decision-making power, not just consultation. We follow rigorous FPIC protocols and ensure community voices drive all major decisions.",
-  },
-  {
-    icon: Microscope,
-    title: "Evidence-Based Practice",
-    description:
-      "Science guides our approach. Quarterly monitoring tracks what's working and what isn't, allowing us to adapt and improve based on real data, not assumptions.",
-  },
-  {
-    icon: Sprout,
-    title: "Long-Term Sustainability",
-    description:
-      "We build local capacity and sustainable financing so conservation continues after external support ends. Our goal is to become unnecessary.",
-  },
-  {
-    icon: Eye,
-    title: "Transparency & Accountability",
-    description:
-      "We publicly share monitoring data, financial reports, and governance decisions. Transparency builds trust with communities and donors alike.",
+      "Every decision respects Free, Prior, and Informed Consent protocols. Communities lead, we support.",
   },
   {
     icon: Heart,
-    title: "Cultural Respect",
+    title: "Traditional Knowledge",
     description:
-      "Traditional governance systems like adat and sasi aren't obstacles—they're foundations. We integrate customary law with modern MPA structures.",
+      "Integration of customary law (adat) with modern conservation. Traditional systems aren't obstacles—they're foundations.",
+  },
+  {
+    icon: Microscope,
+    title: "Scientific Rigor",
+    description:
+      "Evidence-based approaches with measurable outcomes. Quarterly monitoring tracks what's working.",
+  },
+  {
+    icon: Eye,
+    title: "Transparency",
+    description:
+      "Open reporting and community-led governance. We publicly share monitoring data, financials, and decisions.",
+  },
+  {
+    icon: Sprout,
+    title: "Sustainability",
+    description:
+      "Long-term thinking for 30+ years of effective protection. We build capacity so conservation continues.",
   },
   {
     icon: Globe,
-    title: "Scalable Impact",
+    title: "Inclusivity",
     description:
-      "While focused on Raja Ampat, we're building a replicable model that communities across the Coral Triangle and beyond can adapt to their contexts.",
+      "Minimum 30% representation for women, youth, and diverse voices in all governance structures.",
   },
 ];
 
@@ -69,23 +69,15 @@ export default function AboutPage() {
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
           <div className="max-w-[900px] mx-auto">
             <h2 className=" mb-6">
-              Our Origin Story
+              Our Story
             </h2>
-            <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
-              West Papua Care was founded in 2024 by conservationists and
-              community organizers who witnessed firsthand the failures of
-              top-down marine protection. Time and again, we saw Marine
-              Protected Areas established without genuine community consent,
-              leading to conflict, poor compliance, and ultimately unsuccessful
-              conservation.
-            </p>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-12">
-              We knew there had to be a better way—one that respected
-              traditional governance, secured authentic community ownership, and
-              delivered measurable conservation outcomes. Raja Ampat, with its
-              exceptional biodiversity and strong traditional leadership,
-              provided the perfect opportunity to demonstrate this alternative
-              model.
+              West Papua Care was founded on the belief that effective
+              conservation must go hand-in-hand with community empowerment.
+              After years of expedition work in West Papua&apos;s remote
+              regions, our founders recognized that the traditional knowledge
+              and stewardship of local communities are essential to long-term
+              ecosystem protection.
             </p>
 
             <h2 className=" mt-12 mb-6">
@@ -142,23 +134,13 @@ export default function AboutPage() {
             </div>
 
             <h2 className=" mt-12 mb-6">
-              Why Raja Ampat
+              Our Approach
             </h2>
-            <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
-              Raja Ampat isn&apos;t just stunningly beautiful—it&apos;s
-              irreplaceable. As the global epicenter of marine biodiversity,
-              protecting these reefs protects the genetic library for the
-              world&apos;s coral ecosystems. Yet this treasure faces mounting
-              threats: destructive fishing, illegal harvesting, and weakening
-              traditional management.
-            </p>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-12">
-              What made Raja Ampat the right place to start was the combination
-              of exceptional biodiversity, strong traditional governance
-              structures, and communities ready to lead. After two years of
-              relationship-building and consultations, we achieved strong
-              consensus across 10+ villages to establish community-led
-              protection.
+              We don&apos;t impose conservation from the outside. Instead, we
+              work alongside local communities to strengthen their traditional
+              management systems (sasi) while providing the tools, training, and
+              resources needed for effective modern marine protection.
             </p>
 
             <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12">
