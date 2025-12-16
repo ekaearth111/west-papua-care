@@ -54,17 +54,18 @@ src/
 
 ## Color Palette
 
-CSS variables defined in `globals.css`:
+CSS variables defined in `globals.css` (`@theme` block):
 
 | Variable | Color | Usage |
 |----------|-------|-------|
-| `--color-forest-green-deep` | `#0A2D3D` | Header, hero, dark sections |
-| `--color-forest-green` | `#1A5F7A` | Footer |
-| `--color-cream` | `#F0F7FA` | Light section backgrounds |
+| `--color-forest-green-deep` | `#0A2D3D` | Abyssal Blue - Header, hero, dark sections |
+| `--color-forest-green` | `#1A5F7A` | Ocean Teal - Footer |
+| `--color-cream` | `#F0F7FA` | Sea Foam - Light section backgrounds |
 | `--color-burnt-orange` | `#D3640F` | CTAs, buttons, interactive elements |
 | `--color-navy-accent` | `#0a1628` | Accent text/borders on light backgrounds |
-| `--color-charcoal` | `#2D3748` | Body text |
-| `--color-gray` | `#64748B` | Secondary text |
+| `--color-charcoal` | `#1A1A1A` | Body text |
+| `--color-gray` | `#6B6B6B` | Secondary text |
+| `--color-off-white` | `#FFFFFF` | White backgrounds, inverse text |
 
 ## Key Files
 
