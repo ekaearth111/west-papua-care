@@ -75,7 +75,7 @@ export function Header() {
                 <button
                   onClick={() => toggleDropdown(item.label)}
                   aria-expanded={activeDropdown === item.label}
-                  className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-[var(--color-off-white)] bg-transparent border-none py-2 px-4 cursor-pointer transition-colors duration-300 flex items-center gap-1 whitespace-nowrap hover:text-[var(--color-burnt-orange)]"
+                  className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] bg-transparent border-none py-2 px-4 cursor-pointer transition-colors duration-300 flex items-center gap-1 whitespace-nowrap hover:text-orange-500 hover:text-[var(--color-burnt-orange)]"
                 >
                   {item.label}
                   <ChevronDown
@@ -105,9 +105,9 @@ export function Header() {
                 key={item.href}
                 href={item.href!}
                 className={cn(
-                  "font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-[var(--color-off-white)] no-underline py-2 px-4 transition-colors duration-300 whitespace-nowrap hover:text-[var(--color-burnt-orange)]",
+                  "font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] no-underline py-2 px-4 transition-colors duration-300 whitespace-nowrap hover:text-orange-500 hover:text-[var(--color-burnt-orange)]",
                   item.isDonate &&
-                    "bg-[var(--color-burnt-orange)] rounded px-6 font-semibold hover:bg-[#b8580c] hover:text-[var(--color-off-white)]"
+                    "bg-orange-600 bg-[var(--color-burnt-orange)] rounded px-6 font-semibold hover:bg-orange-700 hover:bg-[#b8580c] hover:text-white hover:text-[var(--color-off-white)]"
                 )}
               >
                 {item.label}
