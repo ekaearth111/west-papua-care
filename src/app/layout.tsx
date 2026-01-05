@@ -4,6 +4,11 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
+export const viewport = {
+  minimumScale: 1,
+  width: "device-width",
+};
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-family-heading",
