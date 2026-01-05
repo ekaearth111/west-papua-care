@@ -146,7 +146,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden fixed top-16 left-0 right-0 bottom-0 bg-[var(--color-off-white)] p-8 overflow-y-auto animate-[slide-down_0.3s_ease-out] h-full z-10">
+        <div className="lg:hidden fixed top-16 left-0 right-0 bottom-0 bg-[var(--color-off-white)] p-8 overflow-y-auto animate-[slide-down_0.3s_ease-out] h-dvh z-10">
           <nav className="flex flex-col gap-4" aria-label="Mobile navigation">
             {navigation.map((item) =>
               item.dropdown ? (
