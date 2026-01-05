@@ -1,10 +1,16 @@
 const partners = [
   { name: "UNSW Sydney", logo: "/partners/unsw.svg" },
-  { name: "Conservation International", logo: "/partners/conservation-intl.svg" },
+  {
+    name: "Conservation International",
+    logo: "/partners/conservation-intl.svg",
+  },
   { name: "The Nature Conservancy", logo: "/partners/tnc.svg" },
   { name: "World Wildlife Fund", logo: "/partners/wwf.svg" },
   { name: "University of Papua", logo: "/partners/unipa.svg" },
-  { name: "Indonesian Ministry of Marine Affairs", logo: "/partners/ministry.svg" },
+  {
+    name: "Indonesian Ministry of Marine Affairs",
+    logo: "/partners/ministry.svg",
+  },
 ];
 
 export function PartnersCarousel() {
@@ -33,7 +39,7 @@ export function PartnersCarousel() {
                 key={index}
                 className="flex-shrink-0 w-40 md:w-44 lg:w-48 h-20 md:h-[90px] lg:h-24 flex items-center justify-center p-4"
               >
-                <div className="w-full h-full bg-[rgba(255,255,255,0.1)] rounded flex items-center justify-center text-[rgba(255,255,255,0.7)] text-sm font-medium transition-all duration-300 hover:bg-[rgba(255,255,255,0.15)] hover:text-white">
+                <div className="w-full h-full bg-[rgba(255,255,255,0.1)] rounded flex items-center justify-center text-[rgba(255,255,255,0.7)] text-sm font-medium transition-all text-center text-balance duration-300 hover:bg-[rgba(255,255,255,0.15)] hover:text-white">
                   {partner.name}
                 </div>
               </div>
