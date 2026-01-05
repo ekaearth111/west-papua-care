@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export function CallToAction() {
   return (
     <section className="bg-[var(--color-off-white)] py-20 lg:py-32">
-      <div className="max-w-[800px] mx-auto px-8 text-center">
+      <div className="max-w-[800px] mx-auto px-8 text-center flex flex-col items-center justify-center gap-4">
         <div className="section-label text-[var(--color-gray)]">
           [ GET INVOLVED ]
         </div>
