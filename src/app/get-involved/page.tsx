@@ -146,9 +146,7 @@ export default function GetInvolvedPage() {
               <div className="w-12 h-12 bg-[var(--color-burnt-orange)] rounded-full flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
-              <h2 className=" m-0">
-                Donate
-              </h2>
+              <h2 className=" m-0">Donate</h2>
             </div>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
               Your donation directly supports community-led marine conservation
@@ -162,9 +160,7 @@ export default function GetInvolvedPage() {
                   key={index}
                   className="bg-[var(--color-cream)] p-8 rounded-lg"
                 >
-                  <h3 className=" mb-3">
-                    {way.title}
-                  </h3>
+                  <h3 className=" mb-3">{way.title}</h3>
                   <p className="text-base text-[var(--color-gray)] m-0">
                     {way.description}
                   </p>
@@ -172,9 +168,7 @@ export default function GetInvolvedPage() {
               ))}
             </div>
 
-            <h3 className=" mt-8 mb-6">
-              Your Impact
-            </h3>
+            <h3 className=" mt-8 mb-6">Your Impact</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
               {impactLevels.map((level, index) => (
                 <div
@@ -202,9 +196,7 @@ export default function GetInvolvedPage() {
               <div className="w-12 h-12 bg-[var(--color-forest-green)] rounded-full flex items-center justify-center">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
-              <h2 className=" m-0">
-                Partner With Us
-              </h2>
+              <h2 className=" m-0">Partner With Us</h2>
             </div>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
               We work with organizations that share our commitment to
@@ -223,9 +215,7 @@ export default function GetInvolvedPage() {
                     <div className="w-12 h-12 bg-[var(--color-forest-green)] rounded-full flex items-center justify-center mb-4">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className=" mb-3">
-                      {type.title}
-                    </h3>
+                    <h3 className=" mb-3">{type.title}</h3>
                     <p className="text-base text-[var(--color-gray)] m-0">
                       {type.description}
                     </p>
@@ -245,9 +235,7 @@ export default function GetInvolvedPage() {
               <div className="w-12 h-12 bg-[var(--color-navy-accent)] rounded-full flex items-center justify-center">
                 <Users className="w-6 h-6 text-white" />
               </div>
-              <h2 className=" m-0">
-                Volunteer
-              </h2>
+              <h2 className=" m-0">Volunteer</h2>
             </div>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
               Join our community of volunteers making a difference for marine
@@ -261,9 +249,7 @@ export default function GetInvolvedPage() {
                   key={index}
                   className="bg-[var(--color-cream)] p-8 rounded-lg"
                 >
-                  <h3 className=" mb-3">
-                    {option.title}
-                  </h3>
+                  <h3 className=" mb-3">{option.title}</h3>
                   <p className="text-base text-[var(--color-gray)] m-0">
                     {option.description}
                   </p>
@@ -282,9 +268,7 @@ export default function GetInvolvedPage() {
               <div className="w-12 h-12 bg-[var(--color-charcoal)] rounded-full flex items-center justify-center">
                 <Megaphone className="w-6 h-6 text-white" />
               </div>
-              <h2 className=" m-0">
-                Advocate
-              </h2>
+              <h2 className=" m-0">Advocate</h2>
             </div>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
               Even without donating or volunteering, you can help by spreading
@@ -297,9 +281,7 @@ export default function GetInvolvedPage() {
                   key={index}
                   className="bg-[var(--color-cream)] p-8 rounded-lg"
                 >
-                  <h3 className=" mb-3">
-                    {option.title}
-                  </h3>
+                  <h3 className=" mb-3">{option.title}</h3>
                   <p className="text-base text-[var(--color-gray)] m-0">
                     {option.description}
                   </p>
@@ -308,7 +290,7 @@ export default function GetInvolvedPage() {
             </div>
 
             {/* CTA */}
-            <div className="bg-[var(--color-forest-green)] p-12 rounded-lg text-center mt-12">
+            <div className="bg-[var(--color-forest-green)] p-12 rounded-lg text-center mt-12 flex flex-col items-center justify-center gap-4 text-balance">
               <h3 className="text-center text-[var(--color-off-white)] mb-4">
                 Stay Connected
               </h3>

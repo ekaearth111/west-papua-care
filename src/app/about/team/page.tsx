@@ -45,39 +45,41 @@ export default function TeamPage() {
           </div>
 
           {/* Core Team */}
-          <h2 className="text-center mb-12">Core Team</h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="bg-[var(--color-cream)] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-              >
-                {/* Photo Placeholder */}
-                <div className="h-[300px] bg-gradient-to-br from-[var(--color-forest-green-deep)] to-[var(--color-forest-green)] flex items-center justify-center">
-                  <div className="w-[150px] h-[150px] rounded-full bg-[rgba(255,255,255,0.2)] border-4 border-[var(--color-off-white)]" />
-                </div>
-
-                {/* Info */}
-                <div className="p-8">
-                  <h3 className="mb-1">{member.name}</h3>
-                  <div className="text-[var(--color-navy-accent)] font-semibold mb-4">
-                    {member.role}
+          <div className="flex flex-col items-center justify-center gap-4">
+            <h2 className="text-center mb-12">Core Team</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
+              {team.map((member, index) => (
+                <div
+                  key={index}
+                  className="bg-[var(--color-cream)] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                >
+                  {/* Photo Placeholder */}
+                  <div className="h-[300px] bg-gradient-to-br from-[var(--color-forest-green-deep)] to-[var(--color-forest-green)] flex items-center justify-center">
+                    <div className="w-[150px] h-[150px] rounded-full bg-[rgba(255,255,255,0.2)] border-4 border-[var(--color-off-white)]" />
                   </div>
-                  <p className="text-[var(--color-gray)] leading-relaxed m-0">
-                    {member.bio}
-                  </p>
+                  {/* Info */}
+                  <div className="p-8">
+                    <h3 className="mb-1">{member.name}</h3>
+                    <div className="text-[var(--color-navy-accent)] font-semibold mb-4">
+                      {member.role}
+                    </div>
+                    <p className="text-[var(--color-gray)] leading-relaxed m-0">
+                      {member.bio}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Join Box CTA */}
-          <div className="bg-[var(--color-cream)] p-12 lg:p-16 rounded-xl text-center">
+          <div className="bg-[var(--color-cream)] p-12 lg:p-16 rounded-xl text-center flex flex-col items-center justify-center gap-4 text-balance">
             <div className="section-label text-[var(--color-gray)]">
               [ GET INVOLVED ]
             </div>
-            <h2 className="text-center mb-4">Join Us in Protecting the Amazon of the Seas</h2>
+            <h2 className="text-center mb-4">
+              Join Us in Protecting the Amazon of the Seas
+            </h2>
             <p className="text-center text-lg leading-relaxed text-[var(--color-gray)] max-w-[600px] mx-auto mb-8">
               Traditional indigenous governance meets conservation science to
               safeguard the world&apos;s most biodiverse marine ecosystem for

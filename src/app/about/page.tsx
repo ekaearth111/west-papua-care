@@ -2,14 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/sections/page-hero";
 import { Button } from "@/components/ui/button";
-import {
-  Users,
-  Microscope,
-  Sprout,
-  Eye,
-  Heart,
-  Globe,
-} from "lucide-react";
+import { Users, Microscope, Sprout, Eye, Heart, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -67,10 +60,8 @@ export default function AboutPage() {
 
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
-          <div className="max-w-[900px] mx-auto">
-            <h2 className=" mb-6">
-              Our Story
-            </h2>
+          <div className="max-w-[900px] mx-auto flex flex-col items-start justify-center gap-4">
+            <h2 className=" mb-6">Our Story</h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-12">
               West Papua Care was founded on the belief that effective
               conservation must go hand-in-hand with community empowerment.
@@ -80,9 +71,7 @@ export default function AboutPage() {
               ecosystem protection.
             </p>
 
-            <h2 className=" mt-12 mb-6">
-              Our Mission
-            </h2>
+            <h2 className=" mt-12 mb-6">Our Mission</h2>
             <div className="bg-gradient-to-r from-[rgba(10,22,40,0.08)] to-[rgba(10,22,40,0.12)] border-l-4 border-[var(--color-navy-accent)] p-12 rounded-lg my-8">
               <p className="text-2xl leading-[1.7] text-[var(--color-charcoal)] font-medium m-0">
                 To protect marine biodiversity through community-led
@@ -92,9 +81,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <h2 className=" mt-12 mb-6">
-              Our Vision
-            </h2>
+            <h2 className=" mt-12 mb-6">Our Vision</h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
               We envision a future where coastal communities across the Coral
               Triangle lead marine conservation efforts, managing thriving
@@ -108,9 +95,7 @@ export default function AboutPage() {
               control of their marine future.
             </p>
 
-            <h2 className=" mt-12 mb-8">
-              Our Values
-            </h2>
+            <h2 className=" mt-12 mb-8">Our Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
               {values.map((value, index) => {
                 const Icon = value.icon;
@@ -122,9 +107,7 @@ export default function AboutPage() {
                     <div className="w-12 h-12 mx-auto mb-4 bg-[var(--color-burnt-orange)] rounded-full flex items-center justify-center">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className=" mb-4">
-                      {value.title}
-                    </h3>
+                    <h3 className=" mb-4">{value.title}</h3>
                     <p className="text-base text-[var(--color-gray)] text-left m-0">
                       {value.description}
                     </p>
@@ -133,9 +116,7 @@ export default function AboutPage() {
               })}
             </div>
 
-            <h2 className=" mt-12 mb-6">
-              Our Approach
-            </h2>
+            <h2 className=" mt-12 mb-6">Our Approach</h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-12">
               We don&apos;t impose conservation from the outside. Instead, we
               work alongside local communities to strengthen their traditional
@@ -143,10 +124,8 @@ export default function AboutPage() {
               resources needed for effective modern marine protection.
             </p>
 
-            <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12">
-              <h3 className="text-center mb-4">
-                Join Our Mission
-              </h3>
+            <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12 flex flex-col items-center justify-center gap-4 text-balance">
+              <h3 className="text-center mb-4">Join Our Mission</h3>
               <p className="text-center text-lg text-[var(--color-gray)] mb-6">
                 Help us prove that community-led conservation can protect the
                 world&apos;s most precious marine ecosystems.

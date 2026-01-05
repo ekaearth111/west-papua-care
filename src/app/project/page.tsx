@@ -39,10 +39,8 @@ export default function ProjectPage() {
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2">
-              <h2 className=" mb-6">
-                The Vision
-              </h2>
+            <div className="lg:col-span-2 flex flex-col items-start justify-center gap-4">
+              <h2 className=" mb-6">The Vision</h2>
               <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
                 West Papua Care is establishing a groundbreaking community-led
                 Marine Protected Area in Misool, Raja Ampat, Indonesia—the heart
@@ -52,9 +50,7 @@ export default function ProjectPage() {
                 and surrounding waters—an area twice the size of Paris city.
               </p>
 
-              <h2 className=" mt-12 mb-6">
-                Why Misool, Raja Ampat
-              </h2>
+              <h2 className=" mt-12 mb-6">Why Misool, Raja Ampat</h2>
               <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
                 Misool is a biodiversity hotspot within Raja Ampat, home to 75%
                 of the world&apos;s coral species and over 1,600 fish species.
@@ -72,9 +68,7 @@ export default function ProjectPage() {
                 marine treasure before it&apos;s too late.
               </p>
 
-              <h2 className=" mt-12 mb-6">
-                Project Goals
-              </h2>
+              <h2 className=" mt-12 mb-6">Project Goals</h2>
               <ul className="list-none p-0 my-6">
                 {goals.map((goal, index) => (
                   <li
@@ -86,9 +80,7 @@ export default function ProjectPage() {
                 ))}
               </ul>
 
-              <h2 className=" mt-12 mb-6">
-                Timeline
-              </h2>
+              <h2 className=" mt-12 mb-6">Timeline</h2>
               <div className="flex flex-col gap-6 my-8">
                 <div className="p-6 bg-[var(--color-cream)] border-l-4 border-[var(--color-navy-accent)] rounded">
                   <strong className="block text-[var(--color-charcoal)] mb-2">
@@ -119,9 +111,7 @@ export default function ProjectPage() {
                 </div>
               </div>
 
-              <h2 className=" mt-12 mb-6">
-                Impact to Date
-              </h2>
+              <h2 className=" mt-12 mb-6">Impact to Date</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8">
                 {stats.map((stat, index) => (
                   <div
@@ -138,10 +128,8 @@ export default function ProjectPage() {
                 ))}
               </div>
 
-              <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12">
-                <h3 className="text-center mb-4">
-                  Get Involved
-                </h3>
+              <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12 flex flex-col items-center justify-center gap-4 text-balance">
+                <h3 className="text-center mb-4">Get Involved</h3>
                 <p className="text-center text-lg text-[var(--color-gray)] mb-6">
                   Join us in protecting the Amazon of the Seas through
                   community-led conservation.
@@ -154,9 +142,7 @@ export default function ProjectPage() {
 
             <aside className="flex flex-col gap-8">
               <div className="bg-[var(--color-cream)] p-8 rounded-lg">
-                <h3 className=" mb-6">
-                  Quick Facts
-                </h3>
+                <h3 className=" mb-6">Quick Facts</h3>
                 <dl className="flex flex-col gap-4">
                   <dt className="font-[var(--font-family-heading)] text-sm font-semibold text-[var(--color-navy-accent)] uppercase tracking-wide">
                     Location

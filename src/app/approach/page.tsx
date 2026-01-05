@@ -105,10 +105,8 @@ export default function ApproachPage() {
 
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
-          <div className="max-w-[900px] mx-auto">
-            <h2 className=" mb-6">
-              Why Community-Led?
-            </h2>
+          <div className="max-w-[900px] mx-auto flex flex-col items-start justify-center gap-4">
+            <h2 className=" mb-6">Why Community-Led?</h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
               Traditional top-down Marine Protected Areas often fail because
               they exclude the very people whose cooperation is essential for
@@ -123,9 +121,7 @@ export default function ApproachPage() {
               communities actively protect because they own them.
             </p>
 
-            <h2 className=" mt-12 mb-8">
-              Core Principles
-            </h2>
+            <h2 className=" mt-12 mb-8">Core Principles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
               {principles.map((principle, index) => {
                 const Icon = principle.icon;
@@ -137,9 +133,7 @@ export default function ApproachPage() {
                     <div className="w-12 h-12 bg-[var(--color-burnt-orange)] rounded-full flex items-center justify-center mb-4">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className=" mb-3">
-                      {principle.title}
-                    </h3>
+                    <h3 className=" mb-3">{principle.title}</h3>
                     <p className="text-base text-[var(--color-gray)] m-0">
                       {principle.description}
                     </p>
@@ -148,9 +142,7 @@ export default function ApproachPage() {
               })}
             </div>
 
-            <h2 className=" mt-12 mb-8">
-              Our Methodology
-            </h2>
+            <h2 className=" mt-12 mb-8">Our Methodology</h2>
             <div className="flex flex-col gap-6 my-8">
               {methodology.map((step, index) => (
                 <div
@@ -165,9 +157,7 @@ export default function ApproachPage() {
                       {step.status}
                     </span>
                   </div>
-                  <h3 className=" mb-2">
-                    {step.title}
-                  </h3>
+                  <h3 className=" mb-2">{step.title}</h3>
                   <p className="text-[var(--color-gray)] m-0">
                     {step.description}
                   </p>
@@ -175,10 +165,8 @@ export default function ApproachPage() {
               ))}
             </div>
 
-            <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12">
-              <h3 className="text-center mb-4">
-                Learn More About Our Work
-              </h3>
+            <div className="bg-[var(--color-cream)] w-full p-12 rounded-lg text-center mt-12 flex flex-col items-center justify-center gap-4 text-balance">
+              <h3 className="text-center mb-4">Learn More About Our Work</h3>
               <p className="text-center text-lg text-[var(--color-gray)] mb-6">
                 See how we&apos;re putting these principles into practice in
                 Misool, Raja Ampat.

@@ -126,10 +126,8 @@ export default function ImpactPage() {
 
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
-          <div className="max-w-[900px] mx-auto">
-            <h2 className=" mb-6">
-              Current Status
-            </h2>
+          <div className="max-w-[900px] mx-auto flex flex-col items-start justify-center gap-4">
+            <h2 className=" mb-6">Current Status</h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
               We are in the final stages of preparation before full
               implementation in October 2025. Here&apos;s what we&apos;ve
@@ -152,9 +150,7 @@ export default function ImpactPage() {
               ))}
             </div>
 
-            <h2 className=" mt-12 mb-8">
-              Timeline & Milestones
-            </h2>
+            <h2 className=" mt-12 mb-8">Timeline & Milestones</h2>
             <div className="flex flex-col gap-6 my-8">
               {milestones.map((milestone, index) => (
                 <div
@@ -164,9 +160,7 @@ export default function ImpactPage() {
                   <span className="inline-block text-sm font-semibold text-[var(--color-navy-accent)] uppercase tracking-wide mb-2">
                     {milestone.year}
                   </span>
-                  <h3 className=" mb-2">
-                    {milestone.title}
-                  </h3>
+                  <h3 className=" mb-2">{milestone.title}</h3>
                   <p className="text-[var(--color-gray)] m-0">
                     {milestone.description}
                   </p>
@@ -174,9 +168,7 @@ export default function ImpactPage() {
               ))}
             </div>
 
-            <h2 className=" mt-12 mb-8">
-              Our 5-Year Targets
-            </h2>
+            <h2 className=" mt-12 mb-8">Our 5-Year Targets</h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
               Measurable conservation outcomes based on regional MPA performance
               data:
@@ -196,9 +188,7 @@ export default function ImpactPage() {
                       </span>
                     )}
                   </div>
-                  <h3 className=" mb-2 text-lg">
-                    {target.label}
-                  </h3>
+                  <h3 className=" mb-2 text-lg">{target.label}</h3>
                   <p className="text-sm text-[var(--color-gray)] m-0">
                     {target.description}
                   </p>
@@ -206,9 +196,7 @@ export default function ImpactPage() {
               ))}
             </div>
 
-            <h2 className=" mt-12 mb-8">
-              Expected Outcomes by Category
-            </h2>
+            <h2 className=" mt-12 mb-8">Expected Outcomes by Category</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
               {expectedOutcomes.map((outcome, index) => (
@@ -216,9 +204,7 @@ export default function ImpactPage() {
                   key={index}
                   className="bg-[var(--color-cream)] p-8 rounded-lg"
                 >
-                  <h3 className=" mb-4">
-                    {outcome.title}
-                  </h3>
+                  <h3 className=" mb-4">{outcome.title}</h3>
                   <ul className="list-none p-0 m-0">
                     {outcome.items.map((item, itemIndex) => (
                       <li
@@ -234,9 +220,7 @@ export default function ImpactPage() {
             </div>
 
             <div className="bg-gradient-to-r from-[rgba(10,22,40,0.08)] to-[rgba(10,22,40,0.12)] border-l-4 border-[var(--color-navy-accent)] p-8 rounded-lg my-12">
-              <h3 className=" mb-4">
-                Transparency Commitment
-              </h3>
+              <h3 className=" mb-4">Transparency Commitment</h3>
               <p className="text-[var(--color-gray)] m-0">
                 We will publish quarterly monitoring reports, annual financial
                 statements, and governance decisions publicly. Our commitment to
@@ -245,9 +229,7 @@ export default function ImpactPage() {
               </p>
             </div>
 
-            <h2 className=" mt-12 mb-6">
-              Empowering Local Communities
-            </h2>
+            <h2 className=" mt-12 mb-6">Empowering Local Communities</h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
               Since March 2024, West Papua Care has supported diverse education
               programs and community activities that connect traditional
@@ -290,7 +272,7 @@ export default function ImpactPage() {
               </div>
             </div>
 
-            <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12">
+            <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12 flex flex-col items-center justify-center gap-4 text-balance">
               <h3 className="text-center mb-4">
                 Help Us Achieve These Outcomes
               </h3>
