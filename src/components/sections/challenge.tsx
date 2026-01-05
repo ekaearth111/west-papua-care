@@ -66,10 +66,8 @@ export function Challenge() {
                 <div className="w-12 h-12 p-2 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-xl transition-transform duration-250 group-hover:scale-110">
                   <Icon className="w-full h-full" />
                 </div>
-                <h4 className="m-0">
-                  {threat.title}
-                </h4>
-                <p className="text-lg leading-relaxed text-[var(--color-gray)] m-0">
+                <h4 className="m-0">{threat.title}</h4>
+                <p className="text-lg leading-relaxed text-[var(--color-gray)] m-0 text-balance">
                   {threat.description}
                 </p>
 
@@ -85,20 +83,21 @@ export function Challenge() {
           })}
         </div>
 
-        <div className="bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded p-12">
+        <div className="bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded p-12 flex flex-col items-center justify-center gap-4">
           <h3 className="text-center mb-6 text-[var(--color-navy-accent)]">
             The Opportunity
           </h3>
-          <p className="text-lg leading-[1.7] text-[var(--color-gray)] m-0 max-w-[750px] mx-auto text-center mb-4">
-            Located in the global epicenter of marine biodiversity with the highest
-            fish species richness on Earth, the Misool region represents a critical
-            habitat for threatened species including Napoleon wrasse, Hawksbill and
-            Green sea turtles, Bumphead parrotfish, and reef sharks.
+          <p className="text-lg leading-[1.7] text-[var(--color-gray)] m-0 max-w-[750px] mx-auto text-center mb-4 text-balance">
+            Located in the global epicenter of marine biodiversity with the
+            highest fish species richness on Earth, the Misool region represents
+            a critical habitat for threatened species including Napoleon wrasse,
+            Hawksbill and Green sea turtles, Bumphead parrotfish, and reef
+            sharks.
           </p>
-          <p className="text-lg leading-[1.7] text-[var(--color-charcoal)] font-medium m-0 max-w-[750px] mx-auto text-center">
-            With strong community consensus and traditional leader endorsement secured,
-            we have a window of opportunity to protect this irreplaceable ecosystem
-            before it&apos;s too late.
+          <p className="text-lg leading-[1.7] text-[var(--color-charcoal)] font-medium m-0 max-w-[750px] mx-auto text-center text-balance">
+            With strong community consensus and traditional leader endorsement
+            secured, we have a window of opportunity to protect this
+            irreplaceable ecosystem before it&apos;s too late.
           </p>
         </div>
       </div>
