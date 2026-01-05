@@ -74,7 +74,7 @@ export function Approach() {
               <div
                 key={index}
                 className={cn(
-                  "relative bg-[rgba(255,255,255,0.05)] backdrop-blur-[10px] border border-[rgba(255,255,255,0.1)] rounded-2xl p-12 transition-all duration-500 flex flex-col items-start gap-4 overflow-hidden cursor-pointer",
+                  "relative bg-[rgba(255,255,255,0.05)] backdrop-blur-[10px] border border-[rgba(255,255,255,0.1)] rounded-2xl p-7 transition-all duration-500 flex flex-col items-start gap-4 overflow-hidden cursor-pointer",
                   "hover:border-[rgba(255,255,255,0.3)] hover:-translate-y-1 hover:bg-[rgba(255,255,255,0.08)]"
                 )}
                 onMouseEnter={() => setHoveredIndex(index)}
