@@ -1,6 +1,3 @@
-"use client";
-
-import { useState, FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Instagram, Youtube } from "lucide-react";
@@ -8,25 +5,6 @@ import { quickLinks, getInvolvedLinks } from "@/lib/data/navigation";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState("");
-
-  async function handleNewsletterSubmit(e: FormEvent) {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    setSubmitMessage("Thank you for subscribing!");
-    setEmail("");
-    setIsSubmitting(false);
-
-    setTimeout(() => {
-      setSubmitMessage("");
-    }, 3000);
-  }
 
   return (
     <footer className="bg-[#1A5F7A] bg-[var(--color-forest-green)] text-white/80 text-[rgba(255,255,255,0.8)] py-16 lg:py-24 border-t border-white/10 border-[rgba(255,255,255,0.1)]">
@@ -115,7 +93,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Donate & Newsletter */}
+          {/* Donate */}
           <div className="flex flex-col gap-4">
             <Link
               href="/contact"
@@ -123,37 +101,6 @@ export function Footer() {
             >
               Donate
             </Link>
-            <div className="mt-8">
-              <h5 className="text-white text-[var(--color-off-white)] mb-4">
-                Newsletter
-              </h5>
-              <form
-                onSubmit={handleNewsletterSubmit}
-                className="flex flex-col md:flex-row gap-2"
-              >
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  disabled={isSubmitting}
-                  className="flex-1 py-2 px-4 border border-white/20 border-[rgba(255,255,255,0.2)] rounded bg-white/5 bg-[rgba(255,255,255,0.05)] text-white text-[var(--color-off-white)] font-[var(--font-family-sans)] text-lg placeholder:text-white/40 placeholder:text-[rgba(255,255,255,0.4)] focus:outline-none focus:border-[#D3640F] focus:border-[var(--color-burnt-orange)] focus:bg-white/10 focus:bg-[rgba(255,255,255,0.08)]"
-                />
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="py-2 px-4 bg-[#D3640F] bg-[var(--color-burnt-orange)] text-white text-[var(--color-off-white)] border-none rounded font-[var(--font-family-heading)] text-lg font-semibold cursor-pointer transition-all duration-150 hover:not-disabled:bg-[#b8580c] hover:not-disabled:bg-[var(--color-burnt-orange-dark)] disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isSubmitting ? "Subscribing..." : "Subscribe"}
-                </button>
-              </form>
-              {submitMessage && (
-                <p className="mt-2 text-lg text-[#D3640F] text-[var(--color-burnt-orange)]">
-                  {submitMessage}
-                </p>
-              )}
-            </div>
           </div>
         </div>
 

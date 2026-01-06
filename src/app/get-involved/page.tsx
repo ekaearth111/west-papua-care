@@ -113,11 +113,6 @@ const advocacyOptions = [
       "Amplify our message and help raise awareness about community-led marine conservation.",
   },
   {
-    title: "Join Our Newsletter",
-    description:
-      "Stay informed about our progress and receive updates on how you can take action.",
-  },
-  {
     title: "Spread the Word",
     description:
       "Tell friends, family, and colleagues about our mission to protect Raja Ampat.",
@@ -292,11 +287,10 @@ export default function GetInvolvedPage() {
             {/* CTA */}
             <div className="bg-[var(--color-forest-green)] p-12 rounded-lg text-center mt-12 flex flex-col items-center justify-center gap-4 text-balance">
               <h3 className="text-center text-[var(--color-off-white)] mb-4">
-                Stay Connected
+                Ready to Make a Difference?
               </h3>
               <p className="text-center text-lg text-[rgba(255,255,255,0.9)] mb-6">
-                Subscribe to our newsletter for updates on our progress and
-                impact.
+                Get in touch to learn more about how you can support our mission.
               </p>
               <Button variant="cta" size="md" asChild>
                 <Link href="/contact">Contact Us</Link>
