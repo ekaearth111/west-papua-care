@@ -1,6 +1,8 @@
+import { ReactNode } from "react";
+
 interface PageHeroProps {
   label: string;
-  title: string;
+  title: ReactNode;
   subtitle: string;
 }
 
@@ -19,7 +21,7 @@ export function PageHero({ label, title, subtitle }: PageHeroProps) {
         <div className="section-label text-[rgba(255,255,255,0.7)]">
           [ {label} ]
         </div>
-        <h1 className="text-center text-[var(--color-off-white)] mb-6">
+        <h1 className="text-center text-[var(--color-off-white)] mb-6 leading-[1.2]">
           {title}
         </h1>
         <p className="text-center text-[clamp(1.125rem,2vw,1.5rem)] leading-relaxed text-[rgba(255,255,255,0.9)] max-w-[800px] mx-auto">

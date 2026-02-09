@@ -35,39 +35,41 @@ export function Challenge() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-[var(--color-cream)] py-16 lg:py-20">
+    <section className="bg-[var(--color-cream)] py-16 lg:py-24">
       <div className="max-w-[var(--max-width-content)] mx-auto px-8">
-        <div className="text-center mb-12 lg:mb-16">
+        {/* Header */}
+        <div className="max-w-[800px] mx-auto text-center mb-12 flex flex-col items-center justify-center gap-4">
           <div className="section-label text-[var(--color-gray)]">
             [ THE CHALLENGE ]
           </div>
-          <h2 className="text-center tracking-[-0.02em] mb-4">
+          <h2 className="text-center tracking-[-0.02em] mb-6">
             Why This Matters
           </h2>
-          <h3 className="text-center font-normal text-[var(--color-gray)]">
-            Critical Threats
-          </h3>
+          <p className="text-center text-[clamp(1.125rem,2vw,1.25rem)] leading-[1.7] text-[var(--color-gray)]">
+            Located in the global epicenter of marine biodiversity with the highest fish species richness on Earth, the Misool region represents a critical habitat for threatened species including Napoleon wrasse, Hawksbill and Green sea turtles, Bumphead parrotfish, and reef sharks.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {threats.map((threat, index) => {
             const Icon = threat.icon;
             return (
               <div
                 key={index}
                 className={cn(
-                  "relative bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded p-8 transition-all duration-250 flex flex-col items-start gap-4 overflow-hidden cursor-pointer",
+                  "relative bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded-xl p-6 transition-all duration-250 flex flex-col items-start gap-4 overflow-hidden cursor-pointer h-full",
                   "hover:border-[var(--color-navy-accent)] hover:-translate-y-1 hover:shadow-md"
                 )}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 role="article"
               >
-                <div className="w-12 h-12 p-2 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-xl transition-transform duration-250 group-hover:scale-110">
+                <div className="w-12 h-12 p-2.5 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-xl">
                   <Icon className="w-full h-full" />
                 </div>
-                <h4 className="m-0">{threat.title}</h4>
-                <p className="text-lg leading-relaxed text-[var(--color-gray)] m-0 text-balance">
+                <h4 className="m-0 text-lg">{threat.title}</h4>
+                <p className="text-base leading-relaxed text-[var(--color-gray)] m-0">
                   {threat.description}
                 </p>
 
@@ -81,24 +83,6 @@ export function Challenge() {
               </div>
             );
           })}
-        </div>
-
-        <div className="bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded p-12 flex flex-col items-center justify-center gap-4">
-          <h3 className="text-center mb-6 text-[var(--color-navy-accent)]">
-            The Opportunity
-          </h3>
-          <p className="text-lg leading-[1.7] text-[var(--color-gray)] m-0 max-w-[750px] mx-auto text-center mb-4 text-balance">
-            Located in the global epicenter of marine biodiversity with the
-            highest fish species richness on Earth, the Misool region represents
-            a critical habitat for threatened species including Napoleon wrasse,
-            Hawksbill and Green sea turtles, Bumphead parrotfish, and reef
-            sharks.
-          </p>
-          <p className="text-lg leading-[1.7] text-[var(--color-charcoal)] font-medium m-0 max-w-[750px] mx-auto text-center text-balance">
-            With strong community consensus and traditional leader endorsement
-            secured, we have a window of opportunity to protect this
-            irreplaceable ecosystem before it&apos;s too late.
-          </p>
         </div>
       </div>
     </section>

@@ -47,7 +47,7 @@ export function Header() {
           : "bg-[var(--color-forest-green-deep)]"
       )}
     >
-      <div className="max-w-[var(--max-width-wide)] mx-auto px-6 lg:px-12 py-4 lg:py-6 flex items-center justify-between gap-12">
+      <div className="max-w-[var(--max-width-wide)] mx-auto pl-4 lg:pl-6 pr-6 lg:pr-12 py-4 lg:py-6 flex items-center justify-between gap-12">
         {/* Logo */}
         <Link
           href="/"
@@ -55,11 +55,11 @@ export function Header() {
           aria-label="West Papua Care Home"
         >
           <Image
-            src="/logo.png"
+            src="/images/logo-full.png"
             alt="West Papua Care"
-            width={120}
-            height={36}
-            className="h-9 w-auto brightness-0 invert"
+            width={180}
+            height={54}
+            className="h-12 w-auto"
             priority
           />
         </Link>
@@ -100,15 +100,19 @@ export function Header() {
                   </div>
                 )}
               </div>
+            ) : item.isDonate ? (
+              <Link
+                key={item.href}
+                href={item.href!}
+                className="font-[var(--font-family-heading)] text-sm font-semibold tracking-wide text-white text-[var(--color-off-white)] no-underline py-2 px-6 transition-all duration-300 whitespace-nowrap bg-[#D3640F] bg-[var(--color-burnt-orange)] rounded hover:bg-[#b8580c] hover:bg-[var(--color-burnt-orange-dark)] hover:text-white hover:text-[var(--color-off-white)]"
+              >
+                {item.label}
+              </Link>
             ) : (
               <Link
                 key={item.href}
                 href={item.href!}
-                className={cn(
-                  "font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] no-underline py-2 px-4 transition-colors duration-300 whitespace-nowrap hover:text-[#D3640F] hover:text-[var(--color-burnt-orange)]",
-                  item.isDonate &&
-                    "bg-[#D3640F] bg-[var(--color-burnt-orange)] rounded px-6 font-semibold hover:bg-[#b8580c] hover:bg-[var(--color-burnt-orange-dark)] hover:text-white hover:text-[var(--color-off-white)]"
-                )}
+                className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] no-underline py-2 px-4 transition-colors duration-300 whitespace-nowrap hover:text-[#D3640F] hover:text-[var(--color-burnt-orange)]"
               >
                 {item.label}
               </Link>

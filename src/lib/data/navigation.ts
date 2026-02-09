@@ -23,14 +23,14 @@ export const navigation: NavItem[] = [
     ],
   },
   { href: "/get-involved", label: "GET INVOLVED" },
-  { href: "/contact", label: "DONATE", isDonate: true },
+  { href: "mailto:westpapuacare@gmail.com?subject=Donation%20Inquiry", label: "DONATE", isDonate: true },
 ];
 
 export const quickLinks = [
   { href: "/about", label: "Our Story" },
   { href: "/project", label: "Project Overview" },
   { href: "/impact", label: "Impact Framework" },
-  { href: "mailto:westpapuacare@gmail.com", label: "Contact" },
+  { href: "/get-involved", label: "Get Involved" },
 ];
 
 export const getInvolvedLinks = [

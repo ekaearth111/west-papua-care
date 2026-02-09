@@ -43,55 +43,34 @@ export function Approach() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-[var(--color-forest-green-deep)] py-16 lg:py-20 relative">
-      {/* Dot pattern background */}
-      <div
-        className="absolute inset-0 opacity-[0.05]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.15) 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-        }}
-      />
-
-      <div className="max-w-[var(--max-width-content)] mx-auto px-8 relative z-[1]">
-        <div className="text-center mb-12 lg:mb-16">
-          <div className="section-label text-[rgba(255,255,255,0.7)]">
-            [ OUR APPROACH ]
-          </div>
-          <h2 className="text-center tracking-[-0.02em] text-[var(--color-off-white)] mb-4">
-            Community-Led Conservation
-          </h2>
-          <h3 className="text-center font-normal font-[var(--font-family-sans)] text-[rgba(255,255,255,0.8)]">
-            Traditional Governance Meets Modern Science
-          </h3>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8">
+    <section className="bg-[var(--color-off-white)] py-12 lg:py-16">
+      <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <h2 className="mb-8">Our Principles</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => {
             const Icon = pillar.icon;
             return (
               <div
                 key={index}
                 className={cn(
-                  "relative bg-[rgba(255,255,255,0.05)] backdrop-blur-[10px] border border-[rgba(255,255,255,0.1)] rounded-2xl p-7 transition-all duration-500 flex flex-col items-start gap-4 overflow-hidden cursor-pointer",
-                  "hover:border-[rgba(255,255,255,0.3)] hover:-translate-y-1 hover:bg-[rgba(255,255,255,0.08)]"
+                  "relative bg-[var(--color-cream)] border border-[var(--color-light-gray)] rounded-2xl p-7 transition-all duration-500 flex flex-col items-start gap-4 overflow-hidden cursor-pointer",
+                  "hover:border-[var(--color-burnt-orange)] hover:-translate-y-1 hover:shadow-lg"
                 )}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 role="article"
               >
-                <div className="w-14 h-14 p-4 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-2xl mb-2 transition-transform duration-250 group-hover:scale-110">
+                <div className="w-14 h-14 p-4 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-2xl mb-2 transition-transform duration-250">
                   <Icon className="w-full h-full" />
                 </div>
-                <h4 className="text-[var(--color-off-white)] m-0">
+                <h4 className="text-[var(--color-charcoal)] m-0">
                   {pillar.title}
                 </h4>
                 <ul className="list-none m-0 p-0 flex flex-col gap-2 w-full">
                   {pillar.points.map((point, pointIndex) => (
                     <li
                       key={pointIndex}
-                      className="text-lg leading-relaxed text-[rgba(255,255,255,0.75)] pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-[var(--color-burnt-orange)]"
+                      className="text-base leading-relaxed text-[var(--color-gray)] pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-[var(--color-burnt-orange)]"
                     >
                       {point}
                     </li>

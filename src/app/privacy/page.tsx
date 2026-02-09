@@ -18,12 +18,12 @@ export default function PrivacyPage() {
 
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
-          <div className="max-w-[800px] mx-auto prose prose-lg">
-            <p className="text-sm text-[var(--color-gray)] mb-8">
-              Last updated: December 2024
+          <div className="flex flex-col items-start justify-center gap-4">
+            <p className="text-sm text-[var(--color-gray)] mb-4">
+              Last updated: February 2026
             </p>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mb-4">
               Introduction
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
@@ -34,7 +34,7 @@ export default function PrivacyPage() {
               our organization.
             </p>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               Information We Collect
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-4">
@@ -57,7 +57,7 @@ export default function PrivacyPage() {
               </li>
             </ul>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               How We Use Your Information
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-4">
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
               </li>
             </ul>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               Information Sharing
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
               our activities, subject to confidentiality obligations.
             </p>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               Data Security
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
@@ -99,7 +99,7 @@ export default function PrivacyPage() {
               transmission over the Internet is 100% secure.
             </p>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               Your Rights
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-4">
@@ -120,7 +120,7 @@ export default function PrivacyPage() {
               </li>
             </ul>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               Cookies
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
@@ -130,7 +130,7 @@ export default function PrivacyPage() {
               browser preferences.
             </p>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               Third-Party Links
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
@@ -139,7 +139,7 @@ export default function PrivacyPage() {
               websites. We encourage you to review their privacy policies.
             </p>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               Changes to This Policy
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
@@ -148,7 +148,7 @@ export default function PrivacyPage() {
               this page with an updated revision date.
             </p>
 
-            <h2 className="mt-8 mb-4">
+            <h2 className="mt-12 mb-4">
               Contact Us
             </h2>
             <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-6">
