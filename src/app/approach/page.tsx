@@ -122,7 +122,7 @@ export default function ApproachPage() {
             ))}
           </div>
 
-          <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-16 flex flex-col items-center justify-center gap-4 text-balance">
+          <div className="bg-[var(--color-cream)] p-8 lg:p-12 rounded-lg text-center mt-16 flex flex-col items-center justify-center gap-4 text-balance">
             <h3 className="text-center mb-4">Learn More About Our Work</h3>
             <p className="text-center text-lg text-[var(--color-gray)] mb-6">
               See how we&apos;re putting these principles into practice in

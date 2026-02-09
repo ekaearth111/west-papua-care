@@ -300,7 +300,7 @@ export default function GetInvolvedPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-12 flex flex-col items-center justify-center gap-4 text-balance">
+          <div className="bg-[var(--color-cream)] p-8 lg:p-12 rounded-lg text-center mt-12 flex flex-col items-center justify-center gap-4 text-balance">
             <h3 className="text-center mb-4">
               Ready to Make a Difference?
             </h3>

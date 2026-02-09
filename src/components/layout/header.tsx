@@ -75,7 +75,7 @@ export function Header() {
                 <button
                   onClick={() => toggleDropdown(item.label)}
                   aria-expanded={activeDropdown === item.label}
-                  className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] bg-transparent border-none py-2 px-4 cursor-pointer transition-colors duration-300 flex items-center gap-1 whitespace-nowrap hover:text-[#D3640F] hover:text-[var(--color-burnt-orange)]"
+                  className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] bg-transparent border-none py-3 px-4 cursor-pointer transition-colors duration-300 flex items-center gap-1 whitespace-nowrap hover:text-[#D3640F] hover:text-[var(--color-burnt-orange)]"
                 >
                   {item.label}
                   <ChevronDown
@@ -104,7 +104,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href!}
-                className="font-[var(--font-family-heading)] text-sm font-semibold tracking-wide text-white text-[var(--color-off-white)] no-underline py-2 px-6 transition-all duration-300 whitespace-nowrap bg-[#D3640F] bg-[var(--color-burnt-orange)] rounded hover:bg-[#b8580c] hover:bg-[var(--color-burnt-orange-dark)] hover:text-white hover:text-[var(--color-off-white)]"
+                className="font-[var(--font-family-heading)] text-sm font-semibold tracking-wide text-white text-[var(--color-off-white)] no-underline py-3 px-6 transition-all duration-300 whitespace-nowrap bg-[#D3640F] bg-[var(--color-burnt-orange)] rounded hover:bg-[#b8580c] hover:bg-[var(--color-burnt-orange-dark)] hover:text-white hover:text-[var(--color-off-white)]"
               >
                 {item.label}
               </Link>
@@ -112,7 +112,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href!}
-                className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] no-underline py-2 px-4 transition-colors duration-300 whitespace-nowrap hover:text-[#D3640F] hover:text-[var(--color-burnt-orange)]"
+                className="font-[var(--font-family-heading)] text-sm font-medium tracking-wide text-white text-[var(--color-off-white)] no-underline py-3 px-4 transition-colors duration-300 whitespace-nowrap hover:text-[#D3640F] hover:text-[var(--color-burnt-orange)]"
               >
                 {item.label}
               </Link>
@@ -122,7 +122,7 @@ export function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden flex flex-col justify-center gap-1.5 w-8 h-8 p-0 bg-transparent border-none cursor-pointer z-10"
+          className="lg:hidden flex flex-col justify-center gap-1.5 w-11 h-11 p-1 bg-transparent border-none cursor-pointer z-10"
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           onClick={toggleMenu}

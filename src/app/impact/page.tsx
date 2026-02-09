@@ -227,7 +227,7 @@ export default function ImpactPage() {
             </div>
           </div>
 
-          <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-16 flex flex-col items-center justify-center gap-4 text-balance w-full">
+          <div className="bg-[var(--color-cream)] p-8 lg:p-12 rounded-lg text-center mt-16 flex flex-col items-center justify-center gap-4 text-balance w-full">
             <h3 className="text-center mb-4">
               Help Us Achieve These Outcomes
             </h3>
