@@ -39,6 +39,10 @@ export const metadata: Metadata = {
     "marine protected area",
     "Coral Triangle",
   ],
+  icons: {
+    icon: "/west-papua-care/favicon.png",
+    apple: "/west-papua-care/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
