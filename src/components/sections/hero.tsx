@@ -66,7 +66,7 @@ export function Hero() {
           )}
         >
           <Image
-            src="/images/hero.jpg"
+            src="/west-papua-care/images/hero.jpg"
             alt="Aerial view of Raja Ampat's pristine islands and turquoise waters"
             fill
             className="object-cover brightness-95"

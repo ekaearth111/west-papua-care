@@ -40,7 +40,7 @@ export default function TeamPage() {
             {/* Team Photo */}
             <div className="w-full max-w-[900px] aspect-[3/2] rounded-xl overflow-hidden relative mb-12">
               <Image
-                src="/images/team.jpg"
+                src="/west-papua-care/images/team.jpg"
                 alt="Kaspar Elias Anderegg and Syarif Loji on the beach in Misool"
                 fill
                 className="object-cover"

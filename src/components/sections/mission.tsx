@@ -29,7 +29,7 @@ export function Mission() {
         {/* Full-width landscape image */}
         <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative">
           <Image
-            src="/images/mission-community.jpg"
+            src="/west-papua-care/images/mission-community.jpg"
             alt="West Papua community members in a boat on the river"
             fill
             className="object-cover"
