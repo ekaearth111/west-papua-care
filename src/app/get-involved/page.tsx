@@ -139,7 +139,7 @@ export default function GetInvolvedPage() {
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
           <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative">
             <Image
-              src="/west-papua-care/images/get-involved.jpg"
+              src="/images/get-involved.jpg"
               alt="Community members in Magey Village"
               fill
               className="object-cover"

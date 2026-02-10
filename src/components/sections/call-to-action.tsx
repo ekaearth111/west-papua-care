@@ -18,7 +18,7 @@ export function CallToAction() {
         {/* Full-width landscape image */}
         <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative mb-12">
           <Image
-            src="/west-papua-care/images/cta-coral.jpg"
+            src="/images/cta-coral.jpg"
             alt="Colorful fish swimming over coral reef in the Coral Triangle"
             fill
             className="object-cover"

@@ -102,7 +102,7 @@ export default function ImpactPage() {
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
           <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative">
             <Image
-              src="/west-papua-care/images/impact.jpg"
+              src="/images/impact.jpg"
               alt="Community members in West Papua village"
               fill
               className="object-cover"

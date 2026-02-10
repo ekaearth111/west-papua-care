@@ -64,7 +64,7 @@ export default function AboutPage() {
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
           <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative">
             <Image
-              src="/west-papua-care/images/about-story.jpg"
+              src="/images/about-story.jpg"
               alt="Magey Village community members in West Papua"
               fill
               className="object-cover"

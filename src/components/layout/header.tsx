@@ -55,7 +55,7 @@ export function Header() {
           aria-label="West Papua Care Home"
         >
           <Image
-            src="/west-papua-care/images/logo-full.png"
+            src="/images/logo-full.png"
             alt="West Papua Care"
             width={180}
             height={54}

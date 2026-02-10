@@ -35,7 +35,7 @@ export default function ProjectPage() {
         <div className="max-w-[var(--max-width-content)] mx-auto px-8">
           <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative">
             <Image
-              src="/west-papua-care/images/project.jpg"
+              src="/images/project.jpg"
               alt="Aerial view of Misool's pristine islands and coral reefs"
               fill
               className="object-cover"

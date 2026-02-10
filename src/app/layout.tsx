@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     "Coral Triangle",
   ],
   icons: {
-    icon: "/west-papua-care/favicon.png",
-    apple: "/west-papua-care/apple-touch-icon.png",
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
