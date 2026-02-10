@@ -122,27 +122,27 @@ export function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden flex flex-col justify-center gap-1 sm:gap-1.5 w-9 h-9 sm:w-10 sm:h-10 p-1 bg-transparent border-none cursor-pointer z-10"
+          className="lg:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 bg-transparent border-none cursor-pointer z-10"
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           onClick={toggleMenu}
         >
           <span
             className={cn(
-              "w-full h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300",
-              menuOpen && "translate-y-2 rotate-45"
+              "block w-6 h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300 origin-center",
+              menuOpen && "translate-y-[4px] rotate-45"
             )}
           />
           <span
             className={cn(
-              "w-full h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300",
-              menuOpen && "opacity-0"
+              "block w-6 h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300",
+              menuOpen && "opacity-0 scale-0"
             )}
           />
           <span
             className={cn(
-              "w-full h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300",
-              menuOpen && "-translate-y-2 -rotate-45"
+              "block w-6 h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300 origin-center",
+              menuOpen && "-translate-y-[4px] -rotate-45"
             )}
           />
         </button>
@@ -150,7 +150,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden fixed top-[52px] sm:top-[64px] left-0 right-0 bottom-0 bg-[var(--color-off-white)] px-5 py-6 overflow-y-auto animate-[slide-down_0.3s_ease-out] z-10">
+        <div className="lg:hidden fixed top-[48px] sm:top-[56px] left-0 right-0 bottom-0 bg-[var(--color-off-white)] px-4 py-4 overflow-y-auto animate-[slide-down_0.3s_ease-out] z-10">
           <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
             {navigation.map((item) =>
               item.dropdown ? (
