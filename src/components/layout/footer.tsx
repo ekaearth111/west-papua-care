@@ -11,7 +11,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
           {/* Tagline */}
           <div className="flex flex-col gap-4 max-w-sm">
-            <p className="text-white/80 text-base leading-relaxed whitespace-nowrap">
+            <p className="text-white/80 text-sm sm:text-base leading-relaxed">
               Traditional indigenous governance meets marine conservation science
             </p>
             <div className="flex gap-2 mt-4 -ml-2">

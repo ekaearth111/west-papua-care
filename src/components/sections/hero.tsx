@@ -32,10 +32,14 @@ export function Hero() {
             mounted && "animate-fade-in"
           )}
         >
-          <h1 className="text-[clamp(1.5rem,5vw,3.5rem)] tracking-[-0.02em] text-[var(--color-off-white)] leading-[1.2] flex flex-col items-center text-center">
-            <span className="md:whitespace-nowrap">Protecting the Amazon of the Seas</span>
-            <span className="md:whitespace-nowrap">Through <span className="text-[var(--color-burnt-orange)]">Community Wisdom</span></span>
-            <span className="md:whitespace-nowrap">and Conservation Science</span>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-[-0.02em] text-[var(--color-off-white)] leading-[1.15] text-center">
+            Protecting the Amazon of the Seas
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>
+            Through <span className="text-[var(--color-burnt-orange)]">Community Wisdom</span>
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>
+            and Conservation Science
           </h1>
 
           <p className="text-[clamp(1.125rem,2vw,1.375rem)] leading-relaxed text-[rgba(255,255,255,0.9)]">

@@ -79,7 +79,7 @@ export default function TeamPage() {
           </div>
 
           {/* Learn More CTA */}
-          <div className="bg-[var(--color-cream)] p-12 rounded-lg text-center mt-16 flex flex-col items-center justify-center gap-4 text-balance w-full">
+          <div className="bg-[var(--color-cream)] p-8 lg:p-12 rounded-lg text-center mt-16 flex flex-col items-center justify-center gap-4 text-balance w-full">
             <h3 className="text-center mb-4">Learn More About Our Work</h3>
             <p className="text-center text-lg text-[var(--color-gray)] mb-6">
               See how we&apos;re protecting the Amazon of the Seas through community-led conservation.
