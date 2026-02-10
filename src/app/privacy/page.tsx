@@ -17,7 +17,7 @@ export default function PrivacyPage() {
       />
 
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-start justify-center gap-4">
             <p className="text-sm text-[var(--color-gray)] mb-4">
               Last updated: February 2026

@@ -36,7 +36,7 @@ export function Challenge() {
 
   return (
     <section className="bg-[var(--color-cream)] py-16 lg:py-24">
-      <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+      <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-[800px] mx-auto text-center mb-12 flex flex-col items-center justify-center gap-4">
           <div className="section-label text-[var(--color-gray)]">

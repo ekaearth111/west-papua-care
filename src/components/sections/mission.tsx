@@ -4,7 +4,7 @@ import { Quote } from "lucide-react";
 export function Mission() {
   return (
     <section className="bg-[var(--color-off-white)] py-16 lg:py-32">
-      <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+      <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Text content first */}
         <div className="max-w-[800px] mx-auto mb-12 lg:mb-16">
           <div className="section-label text-[var(--color-gray)] text-center mb-8">

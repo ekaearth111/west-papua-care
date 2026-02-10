@@ -25,7 +25,7 @@ export function Hero() {
       />
 
       {/* Text content - centered */}
-      <div className="max-w-[var(--max-width-content)] mx-auto px-8 relative z-[1]">
+      <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8 relative z-[1]">
         <div
           className={cn(
             "flex flex-col gap-6 max-w-[900px] mx-auto text-center mb-8 lg:mb-12",

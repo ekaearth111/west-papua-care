@@ -26,7 +26,7 @@ export function AudienceCTAs({
 }: AudienceCTAsProps) {
   return (
     <section className={cn("py-16 lg:py-24 bg-[var(--color-off-white)]", className)}>
-      <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+      <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="section-label text-[var(--color-gray)]">
             [ GET INVOLVED ]

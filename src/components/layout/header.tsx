@@ -47,7 +47,7 @@ export function Header() {
           : "bg-[var(--color-forest-green-deep)]"
       )}
     >
-      <div className="max-w-[var(--max-width-wide)] mx-auto pl-4 lg:pl-6 pr-6 lg:pr-12 py-4 lg:py-6 flex items-center justify-between gap-12">
+      <div className="max-w-[var(--max-width-wide)] mx-auto px-4 lg:px-6 py-2 sm:py-3 lg:py-5 flex items-center justify-between gap-8">
         {/* Logo */}
         <Link
           href="/"
@@ -57,9 +57,9 @@ export function Header() {
           <Image
             src="/images/logo-white.svg"
             alt="West Papua Care"
-            width={160}
-            height={42}
-            className="h-10 sm:h-12 w-auto"
+            width={140}
+            height={36}
+            className="h-8 sm:h-10 lg:h-11 w-auto"
             priority
           />
         </Link>
@@ -122,7 +122,7 @@ export function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden flex flex-col justify-center gap-1.5 w-11 h-11 p-1 bg-transparent border-none cursor-pointer z-10"
+          className="lg:hidden flex flex-col justify-center gap-1 sm:gap-1.5 w-9 h-9 sm:w-10 sm:h-10 p-1 bg-transparent border-none cursor-pointer z-10"
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           onClick={toggleMenu}
@@ -150,7 +150,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden fixed top-[72px] left-0 right-0 bottom-0 bg-[var(--color-off-white)] px-6 py-8 overflow-y-auto animate-[slide-down_0.3s_ease-out] z-10">
+        <div className="lg:hidden fixed top-[52px] sm:top-[64px] left-0 right-0 bottom-0 bg-[var(--color-off-white)] px-5 py-6 overflow-y-auto animate-[slide-down_0.3s_ease-out] z-10">
           <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
             {navigation.map((item) =>
               item.dropdown ? (

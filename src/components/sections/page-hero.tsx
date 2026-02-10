@@ -17,7 +17,7 @@ export function PageHero({ label, title, subtitle }: PageHeroProps) {
           backgroundSize: "40px 40px",
         }}
       />
-      <div className="max-w-[var(--max-width-content)] mx-auto px-8 relative z-[1] text-center flex flex-col items-center justify-center gap-4">
+      <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8 relative z-[1] text-center flex flex-col items-center justify-center gap-4">
         <div className="section-label text-[rgba(255,255,255,0.7)]">
           [ {label} ]
         </div>

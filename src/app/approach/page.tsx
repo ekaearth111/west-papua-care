@@ -60,7 +60,7 @@ export default function ApproachPage() {
 
       {/* Hero Image */}
       <section className="bg-[var(--color-off-white)] pt-8 lg:pt-12">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative">
             <Image
               src="/images/approach.jpg"
@@ -75,7 +75,7 @@ export default function ApproachPage() {
 
       {/* Why Community-Led Section */}
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="mb-8">Why Community-Led?</h2>
           <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
             Traditional top-down Marine Protected Areas often fail because
@@ -98,7 +98,7 @@ export default function ApproachPage() {
 
       {/* Methodology Section */}
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="mb-8">Our Methodology</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
             {methodology.map((step, index) => (

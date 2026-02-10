@@ -136,7 +136,7 @@ export default function GetInvolvedPage() {
 
       {/* Hero Image */}
       <section className="bg-[var(--color-off-white)] pt-8 lg:pt-12">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative">
             <Image
               src="/images/get-involved.jpg"
@@ -150,7 +150,7 @@ export default function GetInvolvedPage() {
       </section>
 
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Donate Section */}
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 bg-[var(--color-burnt-orange)] rounded-full flex items-center justify-center">

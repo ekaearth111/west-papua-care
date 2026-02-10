@@ -33,7 +33,7 @@ export default function TeamPage() {
       />
 
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Team Section */}
           <div className="flex flex-col items-center justify-center gap-4 mb-24">
 

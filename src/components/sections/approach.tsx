@@ -44,7 +44,7 @@ export function Approach() {
 
   return (
     <section className="bg-[var(--color-off-white)] py-12 lg:py-16">
-      <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+      <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="mb-8">Our Principles</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => {

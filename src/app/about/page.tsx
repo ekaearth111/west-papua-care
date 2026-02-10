@@ -61,7 +61,7 @@ export default function AboutPage() {
 
       {/* Hero Image */}
       <section className="bg-[var(--color-off-white)] pt-8 lg:pt-12">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="w-full aspect-[16/9] rounded-xl overflow-hidden relative">
             <Image
               src="/images/about-story.jpg"
@@ -75,7 +75,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 lg:py-24 bg-[var(--color-off-white)]">
-        <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+        <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="mb-8">Our Story</h2>
           <p className="text-lg leading-[1.7] text-[var(--color-gray)] mb-8">
             West Papua Care was founded on the belief that effective

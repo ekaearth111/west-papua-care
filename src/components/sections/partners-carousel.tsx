@@ -16,7 +16,7 @@ const partners = [
 export function PartnersCarousel() {
   return (
     <section className="bg-[#0A2D3D] bg-[var(--color-forest-green-deep)] py-20 lg:py-32 overflow-hidden">
-      <div className="max-w-[var(--max-width-wide)] mx-auto px-8">
+      <div className="max-w-[var(--max-width-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="section-label text-center text-[rgba(255,255,255,0.7)]">
           [ OUR PARTNERS ]
         </div>

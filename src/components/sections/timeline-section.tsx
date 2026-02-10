@@ -48,7 +48,7 @@ export function TimelineSection({
       ref={ref}
       className={cn("py-16 lg:py-24 bg-[var(--color-cream)]", className)}
     >
-      <div className="max-w-[var(--max-width-content)] mx-auto px-8">
+      <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-[900px] mx-auto">
           <div className="section-label text-[var(--color-gray)]">
             [ TIMELINE ]
