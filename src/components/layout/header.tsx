@@ -55,11 +55,11 @@ export function Header() {
           aria-label="West Papua Care Home"
         >
           <Image
-            src="/images/logo-full.png"
+            src="/images/logo-white.svg"
             alt="West Papua Care"
-            width={180}
-            height={54}
-            className="h-12 w-auto"
+            width={160}
+            height={42}
+            className="h-10 sm:h-12 w-auto"
             priority
           />
         </Link>
@@ -91,7 +91,7 @@ export function Header() {
                       <Link
                         key={subItem.href}
                         href={subItem.href}
-                        className="block py-2 px-4 text-sm !text-[var(--color-charcoal)] no-underline rounded transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)]"
+                        className="block py-3 px-4 text-sm !text-[var(--color-charcoal)] no-underline rounded transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)]"
                         onClick={() => setActiveDropdown(null)}
                       >
                         {subItem.label}
@@ -150,19 +150,19 @@ export function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden fixed top-16 left-0 right-0 bottom-0 bg-[var(--color-off-white)] p-8 overflow-y-auto animate-[slide-down_0.3s_ease-out] h-dvh z-10">
-          <nav className="flex flex-col gap-4" aria-label="Mobile navigation">
+        <div className="lg:hidden fixed top-[72px] left-0 right-0 bottom-0 bg-[var(--color-off-white)] px-6 py-8 overflow-y-auto animate-[slide-down_0.3s_ease-out] z-10">
+          <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
             {navigation.map((item) =>
               item.dropdown ? (
-                <div key={item.label} className="flex flex-col gap-2">
-                  <div className="font-[var(--font-family-heading)] text-xs font-semibold tracking-widest text-[var(--color-gray)] py-2">
+                <div key={item.label} className="flex flex-col">
+                  <div className="font-[var(--font-family-heading)] text-[11px] font-semibold tracking-widest uppercase text-[var(--color-gray)] pt-4 pb-2 px-3">
                     {item.label}
                   </div>
                   {item.dropdown.map((subItem) => (
                     <Link
                       key={subItem.href}
                       href={subItem.href}
-                      className="block p-4 text-lg !text-[var(--color-charcoal)] no-underline rounded-lg transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)]"
+                      className="block py-3 px-3 text-base font-medium !text-[var(--color-charcoal)] no-underline rounded-lg transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)] active:bg-[var(--color-cream)]"
                       onClick={closeMenu}
                     >
                       {subItem.label}
@@ -174,9 +174,9 @@ export function Header() {
                   key={item.href}
                   href={item.href!}
                   className={cn(
-                    "block p-4 text-lg !text-[var(--color-charcoal)] no-underline rounded-lg transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)]",
+                    "block py-3 px-3 text-base font-medium !text-[var(--color-charcoal)] no-underline rounded-lg transition-all duration-200 hover:bg-[var(--color-cream)] hover:!text-[var(--color-navy-accent)] active:bg-[var(--color-cream)]",
                     item.isDonate &&
-                      "bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] font-semibold text-center hover:bg-[#b8580c] hover:text-[var(--color-off-white)]"
+                      "mt-4 bg-[var(--color-burnt-orange)] !text-[var(--color-off-white)] font-semibold text-center py-4 hover:bg-[#b8580c] hover:!text-[var(--color-off-white)]"
                   )}
                   onClick={closeMenu}
                 >
