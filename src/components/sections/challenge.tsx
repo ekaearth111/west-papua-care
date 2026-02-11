@@ -35,7 +35,7 @@ export function Challenge() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-[var(--color-cream)] py-16 lg:py-24">
+    <section className="bg-[var(--color-cream)] py-10 sm:py-16 lg:py-24">
       <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-[800px] mx-auto text-center mb-12 flex flex-col items-center justify-center gap-4">
@@ -51,25 +51,25 @@ export function Challenge() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {threats.map((threat, index) => {
             const Icon = threat.icon;
             return (
               <div
                 key={index}
                 className={cn(
-                  "relative bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded-xl p-6 transition-all duration-250 flex flex-col items-start gap-4 overflow-hidden cursor-pointer h-full",
+                  "relative bg-[var(--color-off-white)] border border-[var(--color-light-gray)] rounded-xl p-4 sm:p-6 transition-all duration-250 flex flex-col items-start gap-3 sm:gap-4 overflow-hidden cursor-pointer h-full",
                   "hover:border-[var(--color-navy-accent)] hover:-translate-y-1 hover:shadow-md"
                 )}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 role="article"
               >
-                <div className="w-12 h-12 p-2.5 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-xl">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 p-2 sm:p-2.5 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-xl">
                   <Icon className="w-full h-full" />
                 </div>
-                <h4 className="m-0 text-lg">{threat.title}</h4>
-                <p className="text-base leading-relaxed text-[var(--color-gray)] m-0">
+                <h4 className="m-0 text-base sm:text-lg">{threat.title}</h4>
+                <p className="text-sm sm:text-base leading-relaxed text-[var(--color-gray)] m-0">
                   {threat.description}
                 </p>
 

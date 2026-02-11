@@ -13,7 +13,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="bg-[var(--color-forest-green-deep)] pt-24 lg:pt-36 pb-16 lg:pb-24 relative overflow-hidden">
+    <section className="bg-[var(--color-forest-green-deep)] pt-16 sm:pt-20 lg:pt-36 pb-10 sm:pb-16 lg:pb-24 relative overflow-hidden">
       {/* Dot pattern background */}
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -32,7 +32,7 @@ export function Hero() {
             mounted && "animate-fade-in"
           )}
         >
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-[-0.02em] text-[var(--color-off-white)] leading-[1.15] text-center">
+          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-[-0.02em] text-[var(--color-off-white)] leading-[1.2] sm:leading-[1.15] text-center">
             Protecting the Amazon of the Seas
             <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>
@@ -42,7 +42,7 @@ export function Hero() {
             and Conservation Science
           </h1>
 
-          <p className="text-[clamp(1.125rem,2vw,1.375rem)] leading-relaxed text-[rgba(255,255,255,0.9)]">
+          <p className="text-[clamp(0.938rem,2vw,1.25rem)] leading-[1.6] sm:leading-relaxed text-[rgba(255,255,255,0.9)]">
             Establishing a 250 sqkm community-led Marine Protected Area in Raja Ampat,
             Indonesia, where local communities safeguard the world&apos;s most biodiverse
             coral reef ecosystem
@@ -52,9 +52,9 @@ export function Hero() {
         {/* Link above image */}
         <Link
           href="/project"
-          className="flex items-center justify-center gap-3 pt-4 pb-12 group"
+          className="flex items-center justify-center gap-2 sm:gap-3 pt-4 pb-8 sm:pb-12 group"
         >
-          <span className="text-[var(--color-off-white)] text-sm tracking-wide uppercase opacity-80 group-hover:opacity-100 transition-opacity">
+          <span className="text-[var(--color-off-white)] text-xs sm:text-sm tracking-wide uppercase opacity-80 group-hover:opacity-100 transition-opacity">
             Learn About the Marine Protected Area
           </span>
           <span className="text-[var(--color-off-white)] text-lg opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all">

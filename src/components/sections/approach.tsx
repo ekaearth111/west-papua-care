@@ -43,34 +43,34 @@ export function Approach() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-[var(--color-off-white)] py-12 lg:py-16">
+    <section className="bg-[var(--color-off-white)] py-8 sm:py-12 lg:py-16">
       <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-8">Our Principles</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <h2 className="mb-6 sm:mb-8">Our Principles</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {pillars.map((pillar, index) => {
             const Icon = pillar.icon;
             return (
               <div
                 key={index}
                 className={cn(
-                  "relative bg-[var(--color-cream)] border border-[var(--color-light-gray)] rounded-2xl p-7 transition-all duration-500 flex flex-col items-start gap-4 overflow-hidden cursor-pointer",
+                  "relative bg-[var(--color-cream)] border border-[var(--color-light-gray)] rounded-2xl p-4 sm:p-5 lg:p-7 transition-all duration-500 flex flex-col items-start gap-3 sm:gap-4 overflow-hidden cursor-pointer",
                   "hover:border-[var(--color-burnt-orange)] hover:-translate-y-1 hover:shadow-lg"
                 )}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 role="article"
               >
-                <div className="w-14 h-14 p-4 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-2xl mb-2 transition-transform duration-250">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 p-2.5 sm:p-3 lg:p-4 bg-[var(--color-burnt-orange)] text-[var(--color-off-white)] flex items-center justify-center rounded-xl sm:rounded-2xl mb-1 sm:mb-2 transition-transform duration-250">
                   <Icon className="w-full h-full" />
                 </div>
-                <h4 className="text-[var(--color-charcoal)] m-0">
+                <h4 className="text-[var(--color-charcoal)] m-0 text-base sm:text-lg">
                   {pillar.title}
                 </h4>
-                <ul className="list-none m-0 p-0 flex flex-col gap-2 w-full">
+                <ul className="list-none m-0 p-0 flex flex-col gap-1.5 sm:gap-2 w-full">
                   {pillar.points.map((point, pointIndex) => (
                     <li
                       key={pointIndex}
-                      className="text-base leading-relaxed text-[var(--color-gray)] pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-[var(--color-burnt-orange)]"
+                      className="text-sm sm:text-base leading-relaxed text-[var(--color-gray)] pl-5 sm:pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-[var(--color-burnt-orange)]"
                     >
                       {point}
                     </li>

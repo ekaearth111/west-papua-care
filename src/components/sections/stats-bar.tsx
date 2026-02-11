@@ -52,7 +52,7 @@ export function StatsBar({
       )}
     >
       <div className="max-w-[var(--max-width-content)] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
@@ -66,7 +66,7 @@ export function StatsBar({
             >
               <div
                 className={cn(
-                  "font-[var(--font-family-heading)] text-[clamp(2rem,4vw,3.5rem)] font-bold mb-2",
+                  "font-[var(--font-family-heading)] text-[clamp(1.5rem,3.5vw,3.5rem)] font-bold mb-1 sm:mb-2",
                   variant === "dark"
                     ? "text-[var(--color-burnt-orange)]"
                     : "text-[var(--color-navy-accent)]"
@@ -76,7 +76,7 @@ export function StatsBar({
               </div>
               <div
                 className={cn(
-                  "text-base lg:text-lg leading-[1.4]",
+                  "text-xs sm:text-sm lg:text-base leading-[1.4]",
                   variant === "dark"
                     ? "text-[rgba(255,255,255,0.8)]"
                     : "text-[var(--color-gray)]"
