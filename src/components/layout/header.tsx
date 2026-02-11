@@ -122,27 +122,27 @@ export function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 bg-transparent border-none cursor-pointer z-10"
+          className="lg:hidden relative w-10 h-10 flex items-center justify-center bg-transparent border-none cursor-pointer z-10"
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           onClick={toggleMenu}
         >
           <span
             className={cn(
-              "block w-6 h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300 origin-center",
-              menuOpen && "translate-y-[4px] rotate-45"
+              "absolute w-5 h-0.5 bg-white rounded transition-all duration-300",
+              menuOpen ? "rotate-45" : "-translate-y-1.5"
             )}
           />
           <span
             className={cn(
-              "block w-6 h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300",
-              menuOpen && "opacity-0 scale-0"
+              "absolute w-5 h-0.5 bg-white rounded transition-all duration-300",
+              menuOpen && "opacity-0"
             )}
           />
           <span
             className={cn(
-              "block w-6 h-0.5 bg-[var(--color-off-white)] rounded transition-all duration-300 origin-center",
-              menuOpen && "-translate-y-[4px] -rotate-45"
+              "absolute w-5 h-0.5 bg-white rounded transition-all duration-300",
+              menuOpen ? "-rotate-45" : "translate-y-1.5"
             )}
           />
         </button>
